@@ -121,15 +121,21 @@ button{
 #home{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.1fr 0.2fr 0.2fr auto 0.1fr;
+  grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr auto 0.1fr;
   grid-template-areas:
   "navbar navbar"
   "horizontalsection horizontalsection"
+  "featured-carousel featured-carousel"
   "filters filters"
   "feed feed"
   "footerMain footerMain"
   ;
 
+}
+
+
+#carouselExampleIndicators{
+  grid-area: featured-carousel;
 }
 
 #navbar{
@@ -406,6 +412,15 @@ select.filter {
     cursor: pointer;
 }
 
+/* ############## CAROUSEL ###########*/
+#carouselExampleIndicators {
+    max-width: 90%;
+    margin: 30px auto 30px auto;
+}
+
+.carousel-inner{
+  border-radius: 27px;
+}
 /* ############## FEED ############# */
 
 .container-main{
