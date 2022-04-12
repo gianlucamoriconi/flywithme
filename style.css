@@ -31,7 +31,7 @@ p{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none!important;
   transition: .2s all;
 }
 
@@ -568,6 +568,15 @@ a.btn-primary.invest-button.action {
   }
 }
 
+a:hover, .action:hover{
+  color: var(--color1);
+  text-decoration: none;
+}
+
+
+
+
+
 .btn-primary{
   cursor: pointer;
   display: block;
@@ -582,16 +591,20 @@ a.btn-primary.invest-button.action {
   justify-content: center;
 }
 
+.btn-primary:hover{
+  filter: brightness(1.2);
+}
+
 .btn-primary.btn-filter{
   display: inline-block;
   margin-left: 10px;
   transition: .2s;
 }
-
+/* 
 .hover-opacity:hover{
   opacity: 0.8;
   transition: .2s;
-}
+} */
 
 
 .description-text{
