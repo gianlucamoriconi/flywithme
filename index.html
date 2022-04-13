@@ -44,7 +44,8 @@
       </section>
 
       <!--Carrusel Bootstrap 5.1-->
-      <div id="carousel-featured-proyects" class="carousel slide" data-bs-ride="carousel">
+      <section class="w-100" id="featured-proyects">
+        <div id="carousel-featured-proyects" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carousel-featured-proyects" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carousel-featured-proyects" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -52,7 +53,9 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./media/smartphone.jpg" class="d-block w-100" alt="smartphone-carrusel-1">
+            <a href="./pages/post-DEEPER.html">
+              <img src="./media/DEEPER-CONNECT-Featured.jpg" class="d-block w-100" alt="smartphone-carrusel-1">
+            </a>
           </div>
           <div class="carousel-item">
             <img src="./media/smarthome.jpg" class="d-block w-100" alt="smarthome">
@@ -70,7 +73,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-
+      </section>
       <!--Filters-->
       <div id="filters" class="menu-container">
          <div class="title-container">
@@ -101,13 +104,13 @@
               <div class="filter-container">
                  <span class="title-option">Ordenado por:</span>
                  <select class="filter filter-1">
-                    <option value="all">mayor popularidad</option>
-                    <option value="argentina">fecha de publicación</option>
-                    <option value="chile">fecha de finalización</option>
-                    <option value="colombia">mayor monto de financiamiento</option>
-                    <option value="uruguay">menor monto de financiamiento</option>
-                    <option value="mexico">mayor número de patrocinadores</option>
-                    <option value="mexico">menor número de patrocinadores</option>
+                    <option value="popularidad">mayor popularidad</option>
+                    <option value="nuevo primero">más nuevo primero</option>
+                    <option value="fin mas tarde primero">finaliza más tarde primero</option>
+                    <option value="mayor monto">mayor monto de financiamiento</option>
+                    <option value="menor">menor monto de financiamiento</option>
+                    <option value="mas patrocinadores">mayor número de patrocinadores</option>
+                    <option value="menos patrocinadores">menor número de patrocinadores</option>
                  </select>
               </div>
             </div>
@@ -123,9 +126,7 @@
             <div class="post border-curve">
                <div class="image-post-container">
                   <a href="./pages/post-AEYE.html">
-                  <a href="./pages/post-AEYE.html">
                   <img class="img-post" src="./media/biometric.jpg" alt="image-post">
-                  </a>
                   </a>
                   <div class="actions-container">
                      <div class="actions-post">
