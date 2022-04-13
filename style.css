@@ -1014,6 +1014,32 @@ footer a:hover{
   color: var(--color1);
 }
 
+/*NAVBAR BOOTSTRAP*/
+nav.navbar.navbar-light.bg-light {
+    width: 100%;
+    justify-content: space-between;
+}
+
+#navbar .navbar-light .navbar-nav .nav-link{
+  color: var(--main);
+}
+
+.head-menu-container .container-fluid {
+    text-align: right;
+}
+
+#navbar .bg-light{
+  background-color: var(--background)!important;
+}
+
+@media (min-width: 992px){
+  #navbar ul.dropdown-menu.show {
+      left: -42px;
+      text-align: center;
+  }
+}
+/*FIN NAVBAR BOOTSTRAP*/
+
 #login .navbar-container .navbar-item a, #register .navbar-container .navbar-item a{
   color: var(--color1);
 }
