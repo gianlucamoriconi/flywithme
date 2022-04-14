@@ -636,7 +636,7 @@ a:hover, .action:hover{
   cursor: pointer;
   display: block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 600!important;
   width: 150px;
   text-align: center;
   border-radius: 10px;
@@ -782,7 +782,7 @@ form label{
   font-weight: 600;
 }
 
-form input, form button{
+form input:not([type="checkbox"]), form button{
   width: 100%;
   min-height: 42px;
   border-radius: 6px;
@@ -791,6 +791,19 @@ form input, form button{
   margin-top: 7px;
   padding-left: 8px;
   padding-right: 8px;
+}
+
+label.form-check-label{
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.form-check{
+  padding-left: calc(var(--bs-gutter-x) * 1.5)!important;
+}
+
+.btn-primary{
+  border-color: unset!important;
 }
 
 .button.login, .button.register{
@@ -1044,7 +1057,7 @@ footer a:hover{
   background: -webkit-linear-gradient(36deg, rgba(255,11,121,1) 0%, rgba(0,233,245,1) 100%);
   background: linear-gradient(36deg, rgba(255,11,121,1) 0%, rgba(0,233,245,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0b79",endColorstr="#00e9f5",GradientType=1);
-  border: 0px;
+  border: 0px!important;
 }
 }
 
