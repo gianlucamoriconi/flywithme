@@ -94,12 +94,33 @@ button{
 }
 
 .w-80{
-  width: 80%;
+  width: 80%!important;
 }
 
 .h-30{
     height: 30vh;
 }
+
+@media (max-width: 1290px){
+  .hide-mobile-tablet{
+    display: none!important;
+  }
+}
+
+/*Agregado para BOOTSTRAP*/
+.p-15-sides{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 576px){
+  .col-12.p-12-slides{
+    padding-left: unset;
+    padding-right: unset;
+  }
+}
+
+/*FIN Agregado para BOOTSTRAP*/
 
 .sticky{
   position: sticky;
@@ -244,6 +265,16 @@ footer a:hover{
   margin-top: auto;
   margin-bottom: auto;
 }
+
+/*Correcion para BOOTSTRAP*/
+@media (max-width: 767px){
+  .logo-container{
+    margin-top: unset;
+    height: 60px;
+  }
+}
+
+/*Fin de corrección para BOOTSTRAP*/
 
 .logo-link{
   display: flex;
@@ -444,6 +475,10 @@ select.filter {
 }
 
 .feed-grid{
+  display: flex;
+}
+
+/* .feed-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-left: auto;
@@ -476,12 +511,23 @@ select.filter {
     margin-bottom: 60px;
     padding-top: 10px;
   }
+} */
+
+.feed{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -80px;
+  margin-bottom: 60px;
+  padding-top: 10px;
 }
 
 /* ### POST ### */
 
 .post{
-  width: 80%;
+  width: 100%;
   margin: auto;
   height: auto;
   overflow: hidden;
@@ -936,7 +982,7 @@ html{
   background: var(--background);
 }
 
-#login .navbar-container, #register .navbar-container {
+#login .navbar-container, #register .navbar-container, #account .navbar-container {
   background: transparent;
 }
 
@@ -1022,7 +1068,17 @@ nav.navbar.navbar-light.bg-light {
 
 #navbar .navbar-light .navbar-nav .nav-link{
   color: var(--main);
+  font-weight: 600;
 }
+#navbar .navbar-light .navbar-nav .nav-link:focus, #navbar .navbar-light .navbar-nav .nav-link:hover{
+  color: var(--color1);
+}
+
+#navbar .dropdown-item:focus, #navbar .dropdown-item:hover{
+  background-color: unset;
+  color: var(--color1);
+}
+
 
 .head-menu-container .container-fluid {
     text-align: right;
@@ -1038,6 +1094,23 @@ nav.navbar.navbar-light.bg-light {
       text-align: center;
   }
 }
+
+@media (max-width: 767px){
+  #navbar .navbar-light .navbar-toggler{
+    border-color: unset;
+    padding-top: 5px;
+  }
+
+  #navbar .navbar-toggler:focus{
+    box-shadow: 0 0 0 0.1rem;
+  }
+}
+
+
+  #navbar .dropdown-menu{
+    border: 1px solid rgba(0,0,0,.5);
+  }
+
 /*FIN NAVBAR BOOTSTRAP*/
 
 #login .navbar-container .navbar-item a, #register .navbar-container .navbar-item a{
