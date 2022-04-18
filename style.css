@@ -531,14 +531,21 @@ select.filter {
 }
 
 /* ############## CAROUSEL ###########*/
+
 #carousel-featured-proyects {
-    max-width: 90%;
     margin: 30px auto 30px auto;
 }
 
-.carousel-inner{
-  border-radius: 27px;
+@media (min-width: 767px){
+  #carousel-featured-proyects {
+    width: 90%;
+  }
+
+  .carousel-inner{
+    border-radius: 27px;
+  }
 }
+
 
 .carousel-item{
   max-height: 500px;
@@ -549,6 +556,47 @@ select.filter {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+#carousel-featured-proyects .carousel-caption {
+    width: 100%;
+    right: unset;
+    left: unset;
+}
+
+#carousel-featured-proyects .carousel-indicators {
+    margin-left: unset;
+    margin-right: unset;
+    width: 100%;
+}
+
+#carousel-featured-proyects .carousel-caption{
+    background: #00000047;
+}
+
+#carousel-featured-proyects .carousel-control-next-icon, #carousel-featured-proyects .carousel-control-prev-icon{
+  background-image: unset;
+}
+
+#carousel-featured-proyects .carousel-control-next, #carousel-featured-proyects .carousel-control-prev{
+  opacity: 1;
+}
+
+#carousel-featured-proyects .carousel-control-next:focus, #carousel-featured-proyects .carousel-control-next:hover, #carousel-featured-proyects .carousel-control-prev:focus, #carousel-featured-proyects .carousel-control-prev:hover{
+  opacity: 1;
+}
+
+#carousel-featured-proyects i.fa-solid.fa-circle-arrow-right, #carousel-featured-proyects i.fa-solid.fa-circle-arrow-left{
+  font-size: 35px;
+  color: var(--color1);
+}
+
+#carousel-featured-proyects .p-caption-carousel{
+  font-weight: 200;
+}
+
+#carousel-featured-proyects .title-caption-carousel{
+  font-weight: 600;
 }
 
 #feed{
