@@ -128,8 +128,14 @@ button{
     height: 30vh;
 }
 
-@media (max-width: 1290px){
+@media (max-width: 1400px){
   .hide-mobile-tablet{
+    display: none!important;
+  }
+}
+
+@media (min-width: 1400px){
+  .hide-desktop{
     display: none!important;
   }
 }
@@ -305,15 +311,6 @@ footer a:hover{
   margin-top: auto;
   margin-bottom: auto;
 }
-
-/*Correcion para BOOTSTRAP*/
-@media (max-width: 767px){
-  .logo-container{
-    height: 30px;
-  }
-}
-
-/*Fin de corrección para BOOTSTRAP*/
 
 .logo-link{
   display: flex;
