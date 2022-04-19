@@ -56,6 +56,8 @@ button{
 }
 
 
+
+
 /* ## Features ##*/
 .w-12{
   max-width: 1200px;
@@ -169,7 +171,6 @@ button{
   justify-content: center;
   width: 100%;
   margin: auto;
-  background-color: #e6fff8;
 }
 
 #home{
@@ -1169,6 +1170,21 @@ a.another-action{
   /* --color2: #00c4f5; */
   --color2: #f500a6;
 
+}
+
+@keyframes color-change {
+  0% { background-color: var(--background-with-color); }
+  50% { background-color: var(--background-lighter); }
+  100% { background-color: var(--background-with-color); }
+}
+
+.horizontal{
+  font-weight: 300;
+  -webkit-animation: color-change 5s infinite;
+-moz-animation: color-change 5s infinite;
+-o-animation: color-change 5s infinite;
+-ms-animation: color-change 5s infinite;
+animation: color-change 5s infinite;
 }
 
 html{
