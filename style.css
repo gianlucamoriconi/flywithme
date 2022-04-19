@@ -1178,7 +1178,7 @@ a.another-action{
   100% { background-color: var(--background-with-color); }
 }
 
-.horizontal{
+.horizontal {
   font-weight: 300;
   -webkit-animation: color-change 5s infinite;
 -moz-animation: color-change 5s infinite;
