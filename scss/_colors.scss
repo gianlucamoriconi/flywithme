@@ -1,0 +1,139 @@
+:root{
+  --background: #ffffff;
+  --background-with-color: #e6fff8;
+  --background-lighter: #f4ffe2;
+  --main: #000000;
+  --main-lighter: #4c4c4c;
+  /* --color1: #ff3e73; */
+  --color1: #ff5555;
+  /* --color2: #00c4f5; */
+  --color2: #f500a6;
+
+}
+
+body{
+  background: var(--background);
+  color: var(--main);
+}
+
+html{
+  background-color: var(--background) ;
+}
+.navbar-container{
+  background: var(--background);
+}
+
+#login .navbar-container, #register .navbar-container, #account .navbar-container {
+  background: transparent;
+}
+
+.logo-svg path {
+  fill: var(--main);
+}
+
+a.navbar-link {
+  color: var(--main);
+}
+
+a.navbar-link:hover {
+  color: var(--color1);
+}
+
+a{
+  color: var(--color1);
+}
+
+.container-main {
+  background-color: var(--background-with-color);
+}
+
+.post, footer{
+  background-color: var(--background);
+}
+
+#login footer, #register footer{
+  background-color: transparent;
+}
+
+footer a{
+  color: var(--main-lighter);
+}
+
+.navbar-head .bg-light{
+  background-color: var(--background)!important;
+}
+
+#register .navbar-head.head-absolute .bg-light{
+  background-color: transparent!important;
+}
+
+.logo-svg path{
+  fill: var(--color1);
+}
+
+.button.login, .button.register{
+  background-color: var(--color2);
+  color: #ffffff;
+}
+
+a.another-action{
+  color: var(--color1)!important;
+}
+
+.art-by{
+  color: var(--color1);
+}
+
+.navbar-head .fa-filter{
+  color: var(--color1);
+}
+
+#login .navbar-head .navbar-light .navbar-nav .nav-link:focus, #register .navbar-head .navbar-light .navbar-nav .nav-link:hover{
+  color: var(--color2);
+}
+
+.navbar-head .dropdown-item:focus, .navbar-head .dropdown-item:hover{
+  background-color: unset;
+  color: var(--color1);
+}
+
+.transparent{
+  background-color: transparent;
+}
+
+.main-color{
+  color: var(--main);
+}
+
+.main-color:hover{
+  color: var(--color1);
+}
+
+.save-container .action:hover, .sendto-container .action:hover {
+    color: var(--color2);
+    fill: var(--color2);
+}
+
+.action{
+  fill: var(--background);
+  color: var(--background);
+}
+
+@keyframes color-change {
+  0% { background-color: var(--background-with-color); }
+  50% { background-color: var(--background-lighter); }
+  100% { background-color: var(--background-with-color); }
+}
+
+
+.btn-primary{
+  border-color: unset!important;
+}
+
+.button-login-g, .button-register-g {
+  color: var(--background);
+}
+
+svg.logo-google {
+  background-color: var(--background);
+}
