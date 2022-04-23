@@ -234,9 +234,6 @@ button{
   grid-area: footerMain;
 }
 
-#featured-proyects .title-section{
-
-}
 
 .frase{
   font-size: 30px;
@@ -300,10 +297,6 @@ footer a:hover{
 .item-menu{
   display: inline-block;
   padding: 10px;
-}
-
-.link-item-menu{
-
 }
 
 .logo-container{
@@ -517,9 +510,6 @@ footer a:hover{
   font-size: 13px;
 }
 
-.offcanvas-header .btn-close{
-
-}
 
 .filter {
     padding: 10px;
@@ -1269,7 +1259,6 @@ footer a:hover{
   background: -moz-linear-gradient(36deg, rgba(255,11,121,1) 0%, rgba(0,233,245,1) 100%);
   background: -webkit-linear-gradient(36deg, var(--color1) 0%, var(--color2) 100%);
   background: linear-gradient(36deg, var(--color1) 0%, var(--color2) 100%);
-}
 }
 
 .transparent{
