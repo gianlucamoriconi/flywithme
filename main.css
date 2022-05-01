@@ -442,6 +442,16 @@ footer {
   padding-right: 20px;
   min-height: 50px; }
 
+.transparent-fixed-container {
+  position: fixed;
+  width: 100%;
+  z-index: 999; }
+
+.transparent-fixed-element {
+  background: var(--background);
+  margin-top: 6px;
+  border-radius: 20px; }
+
 @media (min-width: 1400px) {
   .navbar-container {
     min-height: 80px; } }
