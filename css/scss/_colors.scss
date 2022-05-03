@@ -16,7 +16,7 @@
 @mixin color-backg ($color, $background){
   color: $color;
   background-color: $background;
-} 
+}
 
 body{
   background: var(--background);
@@ -47,6 +47,10 @@ a.navbar-link:hover {
 }
 
 a{
+  color: var(--color1);
+}
+
+a.link{
   color: var(--color1);
 }
 
@@ -163,7 +167,7 @@ svg.logo-google {
   }
 }
 
-.description-p.progress .progress-bar{
+div.progress .progress-bar{
   background-color: var(--color2);
 }
 
@@ -207,4 +211,18 @@ form input:not([type="checkbox"]), form button{
 .form-side{
   background-color: var(--background);
   color: #000000;
+}
+
+
+.button-sign-g-text{
+  color: var(--background);
+}
+
+
+.navbar-head .bg-light.transparent{
+  background-color: transparent!important;
+}
+
+.button-info{
+  color: var(--main);
 }

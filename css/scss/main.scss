@@ -57,13 +57,39 @@ button{
   cursor: pointer;
 }
 
-
 /*## MAP GET ##*/
 
 $font:(
   light: 200,
-  bold: 600
+  mid-light: 300,
+  medium: 400,
+  bold: 600,
+  extrabold: 700
 );
+
+p{
+  font-weight: map-get($font, mid-light);
+}
+
+h1, h1.h1{
+  font-size: 32px;
+  font-weight: map-get($font, extrabold);
+}
+
+h2, h2.h2{
+  font-size: 27px;
+  font-weight: map-get($font, bold);
+}
+
+h3, h3.h3{
+  font-size: 23px;
+  font-weight: map-get($font, bold);
+}
+
+h4, h4.h4{
+  font-size: 20px;
+  font-weight: map-get($font, bold);
+}
 
 
 @each $m-width in 700, 900, 1200, 1400{
@@ -282,6 +308,9 @@ footer{
   }
 }
 
+div.list ul{
+padding-left: 0;
+}
 /* ## MENU ## */
 
 .head-menu-container{
@@ -340,6 +369,10 @@ footer{
   min-height: 50px;
 }
 
+.transparent {
+  background: transparent!important;
+}
+
 .transparent-fixed-container {
     position: fixed;
     width: 100%;
@@ -350,6 +383,12 @@ footer{
   background: var(--background);
   margin-top: 6px;
   border-radius: 20px;
+}
+
+.profile-mobile{
+  width: fit-content;
+  margin-left: unset;
+  margin-right: unset;
 }
 
 @media (min-width: 1400px){
@@ -396,7 +435,22 @@ footer{
   display: block;
   font-size: 10px;
   margin-top: 2px;
+  font-weight: map-get($font, medium);
 }
+
+@media (max-width: 767px){
+  .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house{
+    font-size: 17px;
+  }
+  .button-info{
+    font-size: 9px;
+  }
+  .navbar-head .nav-link{
+    font-size: 13px;
+  }
+}
+
+
 
 .submenu{
   display: none;
@@ -656,9 +710,12 @@ select.filter {
   justify-content: left;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -80px;
   margin-bottom: 60px;
   padding-top: 10px;
+}
+
+.mt-80-neg{
+  margin-top: -80px;
 }
 
 /* ### POST ### */
@@ -697,7 +754,7 @@ select.filter {
   -webkit-box-orient: vertical;
 }
 
-.description-p.progress {
+div.progress {
     height: 4px;
     margin-bottom: 7px;
 }
@@ -932,8 +989,7 @@ a:hover, .action:hover{
 
 #login-form, #register-form{
   max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+  margin: auto;
 }
 
 .login-box h2, .register-box h2{
@@ -943,6 +999,11 @@ a:hover, .action:hover{
 .form-container {
     display: flex;
     height: 100%;
+}
+
+.recovery-pass{
+white-space: nowrap;
+  font-size: 11px;
 }
 
 
@@ -963,7 +1024,6 @@ form input:not([type="checkbox"]), form button{
   min-height: 42px;
   border-radius: 6px;
   border: 1px solid transparent;
-  margin-top: 7px;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -1087,6 +1147,12 @@ a.another-action{
   padding: 30px;
 }
 
+@media (max-width: 767px){
+  .block {
+    padding: 0px;
+  }
+}
+
 .block-1{
   width: 20%;
   min-width: 300px;
@@ -1113,6 +1179,14 @@ a.another-action{
 
 .brief-info-container {
     line-height: 30px;
+}
+
+.brief-info{
+  font-weight: map-get($font, mid-light);
+}
+
+.brief-info .fa-solid {
+    margin-right: 6px;
 }
 
 .proyect-description{
@@ -1210,7 +1284,7 @@ nav.navbar.navbar-light.bg-light {
   justify-content: space-between;
 }
 
-.navbar-head .navbar-light .navbar-nav .nav-link, a.dropdown-item{
+.navbar-head .navbar-light .navbar-nav .nav-link, a.dropdown-item, a.nav-link{
   color: var(--color1);
   font-weight: map-get($font, bold);
 
@@ -1257,10 +1331,31 @@ nav.navbar.navbar-light.bg-light {
   transition: 0.2s;
 }
 
-.navbar-head i.fa-solid.fa-user{
-  color: var(--color1);
-  font-size: 20px;
-  transition: 0.2s;
+.navbar-head{
+  & i.fa-solid.fa-user, i.fa-solid.fa-house{
+    color: var(--color1);
+    font-size: 20px;
+    transition: 0.2s;
+
+    &:hover{
+      color: var(--color2);
+    }
+  }
+}
+
+.navbar-collapse > .navbar-nav {
+    margin-top: 10px;
+}
+
+.img-profile-mobile{
+  max-width: 38px;
+  width: 100%;
+  height: auto;
+}
+
+#navbar-bottom .container-fluid, #navbar-mobile .container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 button.navbar-toggler i.fa-ellipsis {
@@ -1308,9 +1403,4 @@ $button-sign-redes: (
     background-color: $color;
     border: 1px solid $color;
   }
-}
-
-
-.button-sign-g-text{
-  color: var(--background);
 }

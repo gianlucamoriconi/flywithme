@@ -5,34 +5,105 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name ="keywords" content="iniciar, sesion, logueo, inicio, flywithme, cuenta">
-      <meta name ="description" content="Iniciá sesión en Flywithme para invertir en proyectos y hacerles seguimiento.">      
+      <meta name ="description" content="Iniciá sesión en Flywithme para invertir en proyectos y hacerles seguimiento.">
       <link rel="stylesheet" href="../css/main.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/ea85b50d44.js" crossorigin="anonymous"></script>
       <title>Iniciar sesión en Flywithme</title>
    </head>
    <!--Header-->
-   <header class="head-absolute">
-      <nav class="navbar-container transparent">
-         <!--
-            <img src="./Flywithme-logo.png" class="img-logo" alt="logo-flywithme">
-            -->
-         <div class="logo-container">
-            <a class="logo-link" href="../index.html">
-               <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0.64 4.62 102.1 19.5">
-                  <path d="M4.88 20 l-3 0 l0 -8.26 l-1.24 0 l0 -2.56 l1.24 0 q0.08 -2.14 1.22 -3.26 t3.16 -1.12 q0.6 0 1.32 0.18 l-0.16 2.42 q-0.38 -0.12 -0.82 -0.12 q-1.08 0 -1.4 0.54 t-0.32 1.36 l1.98 0 l0 2.56 l-1.98 0 l0 8.26 z M9.2 4.880000000000001 l3 0 l0 15.12 l-3 0 l0 -15.12 z M16.36 24.12 l1.9 -4.52 l-4.72 -10.56 l3.46 0 l2.78 7 l2.56 -7 l3.46 0 l-6.14 15.08 l-3.3 0 z M26.32 9.04 l3.18 0 l1.84 4.88 l2.66 -5.48 l2.7 5.5 l1.9 -4.9 l3.16 0 l-4.72 11.42 l-3.04 -5.84 l-3 5.84 z M46.24 7.369999999999999 q-0.48 0.47 -1.16 0.47 q-0.7 0 -1.19 -0.47 t-0.49 -1.15 q0 -0.66 0.49 -1.13 t1.19 -0.47 q0.68 0 1.16 0.47 t0.48 1.13 q0 0.68 -0.48 1.15 z M43.580000000000005 9.02 l3 0 l0 10.98 l-3 0 l0 -10.98 z M53.24 16.08 q0 0.7 0.24 1.17 t1.12 0.47 q0.4 0 0.76 -0.04 l0 2.52 q-0.72 0.08 -1.34 0.08 q-1.28 0 -2.07 -0.21 t-1.23 -0.81 t-0.44 -1.72 l0 -6.1 l-1.34 0 l0 -2.62 l1.34 0 l0 -2.94 l2.96 0 l0 2.94 l2.2 0 l0 2.62 l-2.2 0 l0 4.64 z M66.99 10.02 q1.03 1.22 1.03 3.48 l0 6.5 l-3.04 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.55 -0.52 q-0.82 0 -1.48 0.65 t-0.62 2.25 l0 5.82 l-2.98 0 l0 -15.14 l2.98 0 l0 5.12 q0.54 -0.54 1.36 -0.86 t1.58 -0.32 q2.28 0 3.31 1.22 z M87.35 10.04 q1.13 1.24 1.13 3.46 l0 6.5 l-3.02 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.55 -0.52 q-0.8 0 -1.44 0.6 t-0.66 2 l0 6.12 l-3.02 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.53 -0.52 q-0.86 0 -1.49 0.64 t-0.63 2.26 l-0.02 5.82 l-2.98 0 l0 -11 l2.98 0 l0 1 q0.58 -0.52 1.4 -0.86 t1.5 -0.34 q2.32 0 3.54 1.5 q0.62 -0.7 1.54 -1.1 t2 -0.4 q2.3 0 3.43 1.24 z M94.39 19.74 q-1.37 -0.54 -2.35 -1.83 t-0.98 -3.37 t0.99 -3.36 t2.37 -1.82 t2.62 -0.54 q1.44 0 2.74 0.64 t2.13 1.88 t0.87 2.94 q0 0.52 -0.02 0.9 t-0.04 0.48 l-8.68 0 q0.24 1.16 1.2 1.58 t1.8 0.42 q1.08 0 1.72 -0.39 t1.1 -0.89 l2.32 1.34 q-1.88 2.56 -5.14 2.56 q-1.28 0 -2.65 -0.54 z M95 12.05 q-0.78 0.61 -0.88 1.49 l5.5 0 q-0.06 -0.52 -0.4 -1 t-0.91 -0.79 t-1.29 -0.31 q-1.24 0 -2.02 0.61 z" fill="#000000"/>
-               </svg>
-            </a>
-         </div>
-         <div class="head-menu-container">
-            <ul class="navbar-list">
-               <li class="navbar-item"><a href="../index.html" class="navbar-link">Inicio</a></li>
-               <li class="navbar-item"><a href="./register.html" class="navbar-link">Registrarme</a></li>
-            </ul>
-         </div>
+   <header id="navbar-mobile" class="navbar-head fixed-1400 hide-desktop">
+      <nav class="navbar-container">
+         <nav class="navbar navbar-light bg-light">
+           <div id="logo-menu-container" class="logo-container">
+              <a class="logo-link" href="../index.html">
+                 <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0.64 4.62 102.1 19.5">
+                    <path d="M4.88 20 l-3 0 l0 -8.26 l-1.24 0 l0 -2.56 l1.24 0 q0.08 -2.14 1.22 -3.26 t3.16 -1.12 q0.6 0 1.32 0.18 l-0.16 2.42 q-0.38 -0.12 -0.82 -0.12 q-1.08 0 -1.4 0.54 t-0.32 1.36 l1.98 0 l0 2.56 l-1.98 0 l0 8.26 z M9.2 4.880000000000001 l3 0 l0 15.12 l-3 0 l0 -15.12 z M16.36 24.12 l1.9 -4.52 l-4.72 -10.56 l3.46 0 l2.78 7 l2.56 -7 l3.46 0 l-6.14 15.08 l-3.3 0 z M26.32 9.04 l3.18 0 l1.84 4.88 l2.66 -5.48 l2.7 5.5 l1.9 -4.9 l3.16 0 l-4.72 11.42 l-3.04 -5.84 l-3 5.84 z M46.24 7.369999999999999 q-0.48 0.47 -1.16 0.47 q-0.7 0 -1.19 -0.47 t-0.49 -1.15 q0 -0.66 0.49 -1.13 t1.19 -0.47 q0.68 0 1.16 0.47 t0.48 1.13 q0 0.68 -0.48 1.15 z M43.580000000000005 9.02 l3 0 l0 10.98 l-3 0 l0 -10.98 z M53.24 16.08 q0 0.7 0.24 1.17 t1.12 0.47 q0.4 0 0.76 -0.04 l0 2.52 q-0.72 0.08 -1.34 0.08 q-1.28 0 -2.07 -0.21 t-1.23 -0.81 t-0.44 -1.72 l0 -6.1 l-1.34 0 l0 -2.62 l1.34 0 l0 -2.94 l2.96 0 l0 2.94 l2.2 0 l0 2.62 l-2.2 0 l0 4.64 z M66.99 10.02 q1.03 1.22 1.03 3.48 l0 6.5 l-3.04 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.55 -0.52 q-0.82 0 -1.48 0.65 t-0.62 2.25 l0 5.82 l-2.98 0 l0 -15.14 l2.98 0 l0 5.12 q0.54 -0.54 1.36 -0.86 t1.58 -0.32 q2.28 0 3.31 1.22 z M87.35 10.04 q1.13 1.24 1.13 3.46 l0 6.5 l-3.02 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.55 -0.52 q-0.8 0 -1.44 0.6 t-0.66 2 l0 6.12 l-3.02 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.53 -0.52 q-0.86 0 -1.49 0.64 t-0.63 2.26 l-0.02 5.82 l-2.98 0 l0 -11 l2.98 0 l0 1 q0.58 -0.52 1.4 -0.86 t1.5 -0.34 q2.32 0 3.54 1.5 q0.62 -0.7 1.54 -1.1 t2 -0.4 q2.3 0 3.43 1.24 z M94.39 19.74 q-1.37 -0.54 -2.35 -1.83 t-0.98 -3.37 t0.99 -3.36 t2.37 -1.82 t2.62 -0.54 q1.44 0 2.74 0.64 t2.13 1.88 t0.87 2.94 q0 0.52 -0.02 0.9 t-0.04 0.48 l-8.68 0 q0.24 1.16 1.2 1.58 t1.8 0.42 q1.08 0 1.72 -0.39 t1.1 -0.89 l2.32 1.34 q-1.88 2.56 -5.14 2.56 q-1.28 0 -2.65 -0.54 z M95 12.05 q-0.78 0.61 -0.88 1.49 l5.5 0 q-0.06 -0.52 -0.4 -1 t-0.91 -0.79 t-1.29 -0.31 q-1.24 0 -2.02 0.61 z" fill="#000000"/>
+                 </svg>
+              </a>
+           </div>
+           <div class="head-menu-container">
+             <div class="container-fluid">
+               <ul class="navbar-nav">
+                <li class="nav-item">
+                 <a class="nav-link" href="../index.html">Descubrir</a>
+               </li>
+              </ul>
+             </div>
+           </div>
+         </nav>
       </nav>
    </header>
+   <nav id="navbar-desktop" class="navbar-head fixed-1400 fixed hide-mobile-tablet">
+      <div class="navbar-container">
+         <nav class="navbar navbar-expand-xxl navbar-light transparent bg-light">
+           <div id="logo-menu-container" class="logo-container">
+              <a class="logo-link" href="../index.html">
+                 <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0.64 4.62 102.1 19.5">
+                    <path d="M4.88 20 l-3 0 l0 -8.26 l-1.24 0 l0 -2.56 l1.24 0 q0.08 -2.14 1.22 -3.26 t3.16 -1.12 q0.6 0 1.32 0.18 l-0.16 2.42 q-0.38 -0.12 -0.82 -0.12 q-1.08 0 -1.4 0.54 t-0.32 1.36 l1.98 0 l0 2.56 l-1.98 0 l0 8.26 z M9.2 4.880000000000001 l3 0 l0 15.12 l-3 0 l0 -15.12 z M16.36 24.12 l1.9 -4.52 l-4.72 -10.56 l3.46 0 l2.78 7 l2.56 -7 l3.46 0 l-6.14 15.08 l-3.3 0 z M26.32 9.04 l3.18 0 l1.84 4.88 l2.66 -5.48 l2.7 5.5 l1.9 -4.9 l3.16 0 l-4.72 11.42 l-3.04 -5.84 l-3 5.84 z M46.24 7.369999999999999 q-0.48 0.47 -1.16 0.47 q-0.7 0 -1.19 -0.47 t-0.49 -1.15 q0 -0.66 0.49 -1.13 t1.19 -0.47 q0.68 0 1.16 0.47 t0.48 1.13 q0 0.68 -0.48 1.15 z M43.580000000000005 9.02 l3 0 l0 10.98 l-3 0 l0 -10.98 z M53.24 16.08 q0 0.7 0.24 1.17 t1.12 0.47 q0.4 0 0.76 -0.04 l0 2.52 q-0.72 0.08 -1.34 0.08 q-1.28 0 -2.07 -0.21 t-1.23 -0.81 t-0.44 -1.72 l0 -6.1 l-1.34 0 l0 -2.62 l1.34 0 l0 -2.94 l2.96 0 l0 2.94 l2.2 0 l0 2.62 l-2.2 0 l0 4.64 z M66.99 10.02 q1.03 1.22 1.03 3.48 l0 6.5 l-3.04 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.55 -0.52 q-0.82 0 -1.48 0.65 t-0.62 2.25 l0 5.82 l-2.98 0 l0 -15.14 l2.98 0 l0 5.12 q0.54 -0.54 1.36 -0.86 t1.58 -0.32 q2.28 0 3.31 1.22 z M87.35 10.04 q1.13 1.24 1.13 3.46 l0 6.5 l-3.02 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.55 -0.52 q-0.8 0 -1.44 0.6 t-0.66 2 l0 6.12 l-3.02 0 l0 -6.5 q0 -1.18 -0.59 -1.7 t-1.53 -0.52 q-0.86 0 -1.49 0.64 t-0.63 2.26 l-0.02 5.82 l-2.98 0 l0 -11 l2.98 0 l0 1 q0.58 -0.52 1.4 -0.86 t1.5 -0.34 q2.32 0 3.54 1.5 q0.62 -0.7 1.54 -1.1 t2 -0.4 q2.3 0 3.43 1.24 z M94.39 19.74 q-1.37 -0.54 -2.35 -1.83 t-0.98 -3.37 t0.99 -3.36 t2.37 -1.82 t2.62 -0.54 q1.44 0 2.74 0.64 t2.13 1.88 t0.87 2.94 q0 0.52 -0.02 0.9 t-0.04 0.48 l-8.68 0 q0.24 1.16 1.2 1.58 t1.8 0.42 q1.08 0 1.72 -0.39 t1.1 -0.89 l2.32 1.34 q-1.88 2.56 -5.14 2.56 q-1.28 0 -2.65 -0.54 z M95 12.05 q-0.78 0.61 -0.88 1.49 l5.5 0 q-0.06 -0.52 -0.4 -1 t-0.91 -0.79 t-1.29 -0.31 q-1.24 0 -2.02 0.61 z" fill="#000000"/>
+                 </svg>
+              </a>
+           </div>
+           <div class="head-menu-container">
+             <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                 <i class="fa-solid fa-ellipsis"></i>
+               </button>
+               <div id="navbarNavDropdown">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <a class="nav-link" href="./start-proyect.html">Empezar un proyecto</a>
+                   </li>
+                   <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Mi cuenta
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                       <li><a class="dropdown-item" href="./login.html">Iniciar sesión</a></li>
+                       <li><a class="dropdown-item" href="./register.html">Crear cuenta</a></li>
+                     </ul>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </nav>
+      </div>
+   </nav>
+   <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400">
+      <div class="navbar-container">
+         <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+           <div id="logo-menu-container" class="logo-container">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="./start-proyect.html">Empezar un proyecto</a>
+               </li>
+             </ul>
+           </div>
+           <div class="head-menu-container">
+             <div class="container-fluid">
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bottom-dropdown" aria-controls="navbar-bottom-dropdown" aria-expanded="false" aria-label="Toggle navigation">
+                 <i class="fa-solid fa-user"></i>
+                 <span class="button-info">Mi cuenta</span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbar-bottom-dropdown">
+                 <ul class="navbar-nav">
+                   <li class="nav-item">
+                     <a class="nav-link" href="./login.html">Iniciar sesión</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="./register.html">Crear cuenta</a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         </nav>
+      </div>
+   </nav>
    <body id="login">
       <main>
          <div class="main-container ">
@@ -50,51 +121,64 @@
                   <a href="../index.html">Volver al inicio</a>
                   </div>
                   -->
-               <div class="form-container">
-                  <form id="login-form" class="form" action="./account.html" method="post">
-                     <div class="login-box login-g">
-                        <h2 class="title-in-form">Inicia sesión con cuenta de Google</h2>
-                        <a href="#">
-                           <div class="button-sign-google">
-                              <div class="button-sign-g-text">
-                                 Acceder con Google
+                  <div class="form-container">
+                     <form id="register-form" class="form" action="./account.html" method="post">
+                        <div class="register-box register-g">
+                           <h2 class="title-in-form">Accede con tu red social favorita</h2>
+                           <div class="sign-buttons-container">
+                              <div class="button-sign-container mb-3">
+                                 <a href="#">
+                                    <div class="button-sign-google">
+                                       <div class="button-sign-g-text">
+                                          Acceder con Google
+                                       </div>
+                                       <div class="logo-google-container">
+                                          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="logo-google">
+                                             <g>
+                                                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
+                                                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
+                                                <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
+                                                <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
+                                                <path fill="none" d="M0 0h48v48H0z"></path>
+                                             </g>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </a>
                               </div>
-                              <div class="logo-google-container">
-                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="logo-google">
-                                    <g>
-                                       <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path>
-                                       <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path>
-                                       <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path>
-                                       <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path>
-                                       <path fill="none" d="M0 0h48v48H0z"></path>
-                                    </g>
-                                 </svg>
+                              <div class="button-sign-container mb-3">
+                                 <a href="#">
+                                    <div class="button-sign-facebook">
+                                       <div class="button-sign-g-text">
+                                          Acceder con Facebook
+                                       </div>
+                                       <div class="logo-google-container">
+                                          <svg class="logo-google" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path class="logo-fb" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                                       </div>
+                                    </div>
+                                 </a>
                               </div>
                            </div>
-                        </a>
-                     </div>
-                     <hr>
-                     <div class="login-box login-manual">
-                        <h2 class="title-in-form">Inicia sesión manualmente</h2>
-                        <div class="inputs">
-                           <fieldset>
-                              <label for="user-email">Nombre de usuario o email</label>
-                              <input type="text" name="user-email" tabindex="1" class="text-input" autocorrect="off" autocapitalize="off" required>
-                           </fieldset>
-                           <fieldset>
-                              <div class="password-container">
-                                 <label for="password">Contraseña</label><a class="another-action reset-pass" href="#">Recuperar mi contraseña</a>
-                              </div>
-                              <input type="password" name="password" tabindex="2" class="text-input" autocorrect="off" autocapitalize="off" required>
-                           </fieldset>
                         </div>
-                        <div class="accions-form">
-                           <button href="./account" class="button btn-primary login" type="submit" value="Iniciar sesión" tabindex="3">Iniciar sesión</button>
-                           <a class="another-action register-accion" href="./register.html">¿No tenés cuenta? Registrate acá</a>
-                        </div>
-                     </div>
-                  </form>
-               </div>
+                          <hr>
+                          <div class="row">
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="email">
+                            </div>
+                             <div class="mb-3">
+                               <label for="password" class="form-label">Contraseña</label>
+                               <input type="password" class="form-control" id="password">
+                             </div>
+                             <div class="mb-3 mt-3 col-md-12 button-container">
+                               <button type="submit" class="btn btn-primary mb-3">Iniciar sesión</button>
+                               <span><a class="link recovery-pass" href="#">Recupera tu contraseña</a></span>
+                             </div>
+                         </div>
+                       </div>
+
+                     </form>
+                  </div>
             </div>
          </div>
       </main>
@@ -108,5 +192,6 @@
             </ul>
          </div>
       </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    </body>
 </html>
