@@ -212,15 +212,15 @@ h4, h4.h4{
 
 #home{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr auto 0.1fr;
   grid-template-areas:
-  "navbar navbar"
-  "horizontalsection horizontalsection"
-  "featured-carousel featured-carousel"
-  "filters filters"
-  "feed feed"
-  "footerMain footerMain"
+  "navbar"
+  "horizontalsection"
+  "featured-carousel"
+  "filters"
+  "feed"
+  "footerMain"
   ;
 
 }
