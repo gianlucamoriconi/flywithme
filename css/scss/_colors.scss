@@ -1,0 +1,236 @@
+:root{
+  --background: #ffffff;
+  --background-with-color: #e6fff8;
+  --background-lighter: #f4ffe2;
+  --main: #000000;
+  --main-lighter: #4c4c4c;
+  /* --color1: #ff3e73; */
+  --color1: #ff5555;
+  /* --color2: #00c4f5; */
+  --color2: #f500a6;
+
+}
+
+/*## MIXIN ##*/
+
+@mixin color-backg ($color, $background){
+  color: $color;
+  background-color: $background;
+}
+
+body{
+  background: var(--background);
+  color: var(--main);
+}
+
+html{
+  background-color: var(--background) ;
+}
+.navbar-container{
+  background: var(--background);
+}
+
+#login .navbar-container, #register .navbar-container, #account .navbar-container {
+  background: transparent;
+}
+
+.logo-svg path {
+  fill: var(--main);
+}
+
+a.navbar-link {
+  color: var(--main);
+}
+
+a.navbar-link:hover {
+  color: var(--color1);
+}
+
+a{
+  color: var(--color1);
+}
+
+a.link{
+  color: var(--color1);
+}
+
+.container-main {
+  background-color: var(--background-with-color);
+}
+
+.post, footer{
+  background-color: var(--background);
+}
+
+#login footer, #register footer{
+  background-color: transparent;
+}
+
+footer a{
+  color: var(--main-lighter);
+}
+
+.navbar-head .bg-light{
+  background-color: var(--background)!important;
+}
+
+#register .navbar-head.head-absolute .bg-light{
+  background-color: transparent!important;
+}
+
+.logo-svg path{
+  fill: var(--color1);
+}
+
+.button.login, .button.register{
+  @include color-backg(var(--background), var(--color2));
+}
+
+a.another-action{
+  color: var(--color1)!important;
+}
+
+.art-by{
+  color: var(--color1);
+}
+
+.navbar-head .fa-filter{
+  color: var(--color1);
+}
+
+.navbar-head i.fa-solid.fa-square-plus {
+  color: var(--color2);
+
+  &:hover{
+    color: var(--color1);
+  }
+}
+
+#login .navbar-head .navbar-light .navbar-nav .nav-link:focus, #register .navbar-head .navbar-light .navbar-nav .nav-link:hover{
+  color: var(--color2);
+}
+
+.navbar-head .dropdown-item:focus, .navbar-head .dropdown-item:hover{
+  @include color-backg(var(--color1), unset);
+}
+
+.transparent{
+  background-color: transparent;
+}
+
+.main-color{
+  color: var(--main);
+}
+
+.main-color:hover{
+  color: var(--color1);
+}
+
+.save-container .action:hover, .sendto-container .action:hover {
+    color: var(--color2);
+    fill: var(--color2);
+}
+
+.action{
+  fill: var(--background);
+  color: var(--background);
+}
+
+@keyframes color-change {
+  0% { background-color: var(--background-with-color); }
+  50% { background-color: var(--background-lighter); }
+  100% { background-color: var(--background-with-color); }
+}
+
+
+.btn-primary{
+  border-color: unset!important;
+}
+
+.button-login-g, .button-register-g {
+  color: var(--background);
+}
+
+svg.logo-google {
+  background-color: var(--background);
+}
+
+@media (max-width: 1400px){
+  .fixed-1400{
+    background-color: var(--background);
+  }
+}
+
+.submenu{
+  background-color: var(--background);
+}
+
+#filters {
+  background-color: var(--background);
+}
+
+#carousel-featured-proyects{
+  i.fa-solid.fa-circle-arrow-right, & i.fa-solid.fa-circle-arrow-left{
+    color: var(--color1);
+  }
+}
+
+div.progress .progress-bar{
+  background-color: var(--color2);
+}
+
+.value-data{
+  color: var(--color1);
+}
+
+a:hover, .action:hover{
+  color: var(--color1);
+}
+
+form input:not([type="checkbox"]), form button{
+  background-color: #0000001f;
+}
+
+.save-container .action, .sendto-container .action {
+  fill: var(--color1);
+  @include color-backg(var(--color1), var(--background));
+}
+
+.btn-primary{
+  @include color-backg(var(--background), var(--color1));
+  border: 0px!important;
+  background: -moz-linear-gradient(36deg, rgb(255, 11, 121) 0%, rgba(0,233,245,1) 100%);
+  background: -webkit-linear-gradient(36deg, var(--color1) 0%, var(--color2) 100%);
+  background: linear-gradient(36deg, var(--color1) 0%, var(--color2) 100%);
+}
+
+.left-side{
+  background-color: #cdf1d4;
+}
+
+#login .left-side{
+  background-color: #cde4f1;
+}
+
+#register .left-side{
+  background-color: #cdf1d4;
+}
+
+.form-side{
+  background-color: var(--background);
+  color: #000000;
+}
+
+
+.button-sign-g-text{
+  color: var(--background);
+}
+
+
+.navbar-head .bg-light.transparent{
+  background-color: transparent!important;
+}
+
+.button-info{
+  color: var(--main);
+}

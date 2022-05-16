@@ -1,0 +1,16 @@
+¡Hola! Acá dejo las notas de la entrega del miércoles 27 de abril. 
+
+# SASS II y SEO
+
+## ¿Qué agregué en esta entrega? 
+
+- Agregué en el archivo main.scss un MAP, un MAP GET y un MIXIN. 
+Al inicio de cada uno dejé un comentario con el título (ejemplo: /* MAP */) para ubicarlos más rápido.
+
+- Agregué meta keywords y meta description en todas las páginas, ya que ninguna tenía. Lo que ya tenían era el meta title. 
+
+
+## ¿Dónde están estos cambios?
+
+En la rama Sass-y-SEO. 
+Se puede ver publicada esa rama en este link de github: https://gianlucamoriconi.github.io/flywithme/
