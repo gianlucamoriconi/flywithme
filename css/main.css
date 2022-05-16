@@ -535,17 +535,9 @@ div.list ul {
 
 .button-info {
   display: block;
-  font-size: 9px;
+  font-size: 10px;
   margin-top: 2px;
   font-weight: 400; }
-
-@media (max-width: 767px) {
-  .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus {
-    font-size: 17px; }
-  .button-info {
-    font-size: 8px; }
-  .navbar-head .nav-link {
-    font-size: 11px; } }
 
 .navbar-head i.fa-solid.fa-square-plus {
   font-size: 1.9em; }
@@ -1163,6 +1155,10 @@ footer a:hover {
   background: linear-gradient(36deg, var(--color1) 0%, var(--color2) 100%); }
 
 /*NAVBAR BOOTSTRAP*/
+#navbar-bottom .navbar {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
 .navbar-nav {
   margin: auto; }
 
@@ -1217,6 +1213,14 @@ nav.navbar.navbar-light.bg-light {
   transition: 0.2s; }
   .navbar-head i.fa-solid.fa-user:hover, .navbar-head i.fa-solid.fa-house:hover {
     color: var(--color2); }
+
+@media (max-width: 767px) {
+  .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus {
+    font-size: 17px; }
+  .button-info {
+    font-size: 9px; }
+  .navbar-head .nav-link {
+    font-size: 11px; } }
 
 .navbar-collapse > .navbar-nav {
   margin-top: 10px; }

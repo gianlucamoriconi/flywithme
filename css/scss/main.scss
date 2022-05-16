@@ -438,22 +438,11 @@ padding-left: 0;
 
 .button-info{
   display: block;
-  font-size: 9px;
+  font-size: 10px;
   margin-top: 2px;
   font-weight: map-get($font, medium);
 }
 
-@media (max-width: 767px){
-  .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus{
-    font-size: 17px;
-  }
-  .button-info{
-    font-size: 8px;
-  }
-  .navbar-head .nav-link{
-    font-size: 11px;
-  }
-}
 
 .navbar-head i.fa-solid.fa-square-plus {
   font-size: 1.9em;
@@ -1268,6 +1257,10 @@ footer a:hover{
 
 
 /*NAVBAR BOOTSTRAP*/
+#navbar-bottom .navbar{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 .navbar-nav{
   margin: auto;
@@ -1344,6 +1337,19 @@ nav.navbar.navbar-light.bg-light {
     &:hover{
       color: var(--color2);
     }
+  }
+}
+
+
+@media (max-width: 767px){
+  .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus{
+    font-size: 17px;
+  }
+  .button-info{
+    font-size: 9px;
+  }
+  .navbar-head .nav-link{
+    font-size: 11px;
   }
 }
 
