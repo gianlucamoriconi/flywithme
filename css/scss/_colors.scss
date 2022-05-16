@@ -98,6 +98,14 @@ a.another-action{
   color: var(--color1);
 }
 
+.navbar-head i.fa-solid.fa-square-plus {
+  color: var(--color2);
+
+  &:hover{
+    color: var(--color1);
+  }
+}
+
 #login .navbar-head .navbar-light .navbar-nav .nav-link:focus, #register .navbar-head .navbar-light .navbar-nav .nav-link:hover{
   color: var(--color2);
 }
