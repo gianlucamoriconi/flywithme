@@ -213,12 +213,11 @@ h4, h4.h4{
 #home{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.1fr 0.2fr 0.2fr 0.2fr auto 0.1fr;
+  grid-template-rows: 0.1fr 0.2fr 0.2fr auto 0.1fr;
   grid-template-areas:
   "navbar"
   "horizontalsection"
   "featured-carousel"
-  "filters"
   "feed"
   "footerMain"
   ;
@@ -227,13 +226,12 @@ h4, h4.h4{
 
 @media (max-width: 1400px){
   #home{
-  grid-template-rows: 0.2fr 0.2fr 0.2fr auto 0.1fr;
+  grid-template-rows: 0.2fr 0.2fr auto 0.15fr;
   grid-template-areas:
-  "horizontalsection horizontalsection"
-  "featured-carousel featured-carousel"
-  "filters filters"
-  "feed feed"
-  "footerMain footerMain"
+  "horizontalsection"
+  "featured-carousel"
+  "feed"
+  "footerMain"
   ;
   }
 }
@@ -487,7 +485,7 @@ padding-left: 0;
 #filters {
   display: block;
   width: 100%;
-  padding: 70px 40px 110px 40px;
+  padding: 50px 40px 50px 40px;
   min-height: 180px;
   margin-bottom: 50px;
 }
@@ -535,25 +533,6 @@ padding-left: 0;
     font-weight: map-get($font, bold);
   }
 }
-
-@media (max-width: 480px){
-  #filters span.title-filters{
-    font-size: 22px;
-  }
-}
-
-@media (min-width: 481px){
-  #filters span.title-filters{
-    font-size: 24px;
-  }
-}
-
-@media (min-width: 1130px){
-  #filters span.title-filters{
-    font-size: 28px;
-  }
-}
-
 
 
 .filter-container {
@@ -715,7 +694,7 @@ select.filter {
 }
 
 .mt-80-neg{
-  margin-top: -80px;
+  margin-top: -$overlap-feed;
 }
 
 /* ### POST ### */
@@ -1279,6 +1258,21 @@ footer a:hover{
 
 
 /*NAVBAR BOOTSTRAP*/
+
+.navbar-nav{
+  margin: auto;
+}
+
+.column-nav {
+    width: 33%;
+    min-width: 80px;
+}
+
+.container-feed{
+  margin-top: $overlap-feed;
+}
+
+
 nav.navbar.navbar-light.bg-light {
   width: 100%;
   justify-content: space-between;

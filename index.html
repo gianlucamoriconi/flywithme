@@ -119,14 +119,24 @@
       <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400">
          <div class="navbar-container">
             <nav class="navbar navbar-expand-xxl navbar-light bg-light">
-              <div id="logo-menu-container" class="logo-container">
+              <div class="column-nav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
+                    <a class="nav-link" href="./index.html">
+                      <i class="fa-solid fa-house"></i>
+                      <span class="button-info">Inicio</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="column-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item center">
                     <a class="nav-link" href="./pages/start-proyect.html">Empezar un proyecto</a>
                   </li>
                 </ul>
               </div>
-              <div class="head-menu-container">
+              <div class="column-nav head-menu-container">
                 <div class="container-fluid">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bottom-dropdown" aria-controls="navbar-bottom-dropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-user"></i>
@@ -191,54 +201,422 @@
         </button>
       </div>
       </section>
-      <!--Filters-->
-      <div id="filters" class="menu-container hide-mobile-tablet">
-         <div class="title-container">
-          <span class="title-filters">Filtrar proyectos:</span>
-        </div>
-         <div class="filter-box">
-           <div class="filter-list">
-              <div class="filter-container">
-                <span class="title-option">¿Categoría?</span>
-                 <select class="filter filter-1">
-                    <option value="tecnology">Todos los proyectos</option>
-                    <option value="tecnology">Tecnología</option>
-                    <option value="realstate">Inmobiliaria</option>
-                    <option value="service">Servicios</option>
-                 </select>
-              </div>
-              <div class="filter-container">
-                 <span class="title-option">¿En qué país?</span>
-                 <select class="filter filter-1">
-                    <option value="all">Todo el mundo</option>
-                    <option value="argentina">Argentina</option>
-                    <option value="chile">Chile</option>
-                    <option value="colombia">Colombia</option>
-                    <option value="uruguay">Uruguay</option>
-                    <option value="mexico">México</option>
-                 </select>
-              </div>
-              <div class="filter-container">
-                 <span class="title-option">Ordenado por:</span>
-                 <select class="filter filter-1">
-                    <option value="popularidad">mayor popularidad</option>
-                    <option value="nuevo primero">más nuevo primero</option>
-                    <option value="fin mas tarde primero">finaliza más tarde primero</option>
-                    <option value="mayor monto">mayor monto de financiamiento</option>
-                    <option value="menor">menor monto de financiamiento</option>
-                    <option value="mas patrocinadores">mayor número de patrocinadores</option>
-                    <option value="menos patrocinadores">menor número de patrocinadores</option>
-                 </select>
-              </div>
-            </div>
-            <button class="invest-button btn-filter hover-opacity" type="button" name="button">Aplicar filtros</button>
-         </div>
-      </div>
-
 
       <!--Feed-->
-      <div id="feed" class="container-main">
+      <section id="feed">
+        <h2 class="h2 p-5">Proyectos donde invertir</h2>
+        <!--Filters-->
+        <div id="filters" class="menu-container hide-mobile-tablet p-5">
+           <div class="title-container">
+            <h3 class="title-filters h3">Filtrar proyectos:</h3>
+          </div>
+           <div class="filter-box">
+             <div class="filter-list">
+                <div class="filter-container">
+                  <span class="title-option">¿Categoría?</span>
+                   <select class="filter filter-1">
+                      <option value="tecnology">Todos los proyectos</option>
+                      <option value="tecnology">Tecnología</option>
+                      <option value="realstate">Inmobiliaria</option>
+                      <option value="service">Servicios</option>
+                   </select>
+                </div>
+                <div class="filter-container">
+                   <span class="title-option">¿En qué país?</span>
+                   <select class="filter filter-1">
+                      <option value="all">Todo el mundo</option>
+                      <option value="argentina">Argentina</option>
+                      <option value="chile">Chile</option>
+                      <option value="colombia">Colombia</option>
+                      <option value="uruguay">Uruguay</option>
+                      <option value="mexico">México</option>
+                   </select>
+                </div>
+                <div class="filter-container">
+                   <span class="title-option">Ordenado por:</span>
+                   <select class="filter filter-1">
+                      <option value="popularidad">mayor popularidad</option>
+                      <option value="nuevo primero">más nuevo primero</option>
+                      <option value="fin mas tarde primero">finaliza más tarde primero</option>
+                      <option value="mayor monto">mayor monto de financiamiento</option>
+                      <option value="menor">menor monto de financiamiento</option>
+                      <option value="mas patrocinadores">mayor número de patrocinadores</option>
+                      <option value="menos patrocinadores">menor número de patrocinadores</option>
+                   </select>
+                </div>
+              </div>
+              <button class="invest-button btn-filter hover-opacity" type="button" name="button">Aplicar filtros</button>
+           </div>
+        </div>
+        <div class="container-main container-feed">
          <div class="feed mt-80-neg d-w-80 container-fluid">
+             <!--POST-->
+             <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
+               <div class="post border-curve">
+                <div class="image-post-container">
+                   <a href="./pages/post-AEYE.html">
+                   <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
+                   </a>
+                   <div class="actions-container">
+                      <div class="actions-post">
+                         <div class="save-container">
+                            <a class="action" href="#">
+                              <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                            </a>
+                         </div>
+                         <div class="sendto-container">
+                            <a class="action" href="#">
+                               <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
+                                  <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                  <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                               </svg>
+                            </a>
+                         </div>
+                         <div class="title-container action">
+                            <a class="action" href="./pages/post-AEYE.html">
+                            <span class="title">AEYE Health</span>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="actions-post">
+                         <div class="invest-container action">
+                            <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="description-container">
+                   <div class="description-text">
+                      <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
+                         All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
+                         AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
+                         Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
+                         A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
+                         The details here are based on information received from, and verified solely by, the company.
+                      </p>
+                   </div>
+                   <div class="description-text data-info">
+                        <div class="description-p">
+                          <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
+                        </div>
+                        <div class="description-p">
+                          <span class="description-p"><span class="value-data">70%</span> financiado</span>
+                        </div>
+                        <div class="description-p progress">
+                         <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <div class="description-p">
+                        <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             </div>
+
+             <!--POST-->
+             <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
+              <div class="post border-curve">
+                 <div class="image-post-container">
+                    <a href="./pages/post-DEEPER.html">
+                    <img class="img-post" src="https://ksr-ugc.imgix.net/assets/035/352/614/e6b73d8639c8622a61f500d74a485894_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1635181652&auto=format&frame=1&q=92&s=b3ff32d3ac66000ad2131083a380ec9b" alt="image-post-proyect-Deeper-Conne   cT">
+                    </a>
+                    <div class="actions-container">
+                       <div class="actions-post">
+                          <div class="save-container">
+                             <a class="action" href="#">
+                               <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                             </a>
+                          </div>
+                          <div class="sendto-container">
+                             <a class="action" href="#">
+                                <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
+                                   <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                   <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                                </svg>
+                             </a>
+                          </div>
+                          <div class="title-container action">
+                             <a class="action" href="./pages/post-DEEPER.html">
+                             <span class="title">Deeper Connect</span>
+                             </a>
+                          </div>
+                       </div>
+                       <div class="actions-post">
+                          <div class="invest-container action">
+                             <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="description-container">
+                    <div class="description-text">
+                       <p class="description-p">Deeper Connect Pico is the world’s thinnest, lightest, smallest, and yet the most unique and powerful cybersecurity hardware device, which integrates a 7-layer enterprise-grade firewall and the world’s one and only Decentralized VPN (DPN).
+                       </p>
+                    </div>
+                    <div class="description-text data-info">
+                         <div class="description-p">
+                           <span class="description-p"><span class="value-data">$137.000</span> contribuido</span>
+                         </div>
+                         <div class="description-p">
+                           <span class="description-p"><span class="value-data">35%</span> financiado</span>
+                         </div>
+                         <div class="description-p progress">
+                          <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="description-p">
+                         <span class="description-p"><span class="value-data">45 días</span> para finalizar</span>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+
+            <!--POST-->
+            <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
+              <div class="post border-curve">
+               <div class="image-post-container">
+                  <a href="./pages/post-AEYE.html">
+                  <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
+                  </a>
+                  <div class="actions-container">
+                     <div class="actions-post">
+                        <div class="save-container">
+                           <a class="action" href="#">
+                             <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                           </a>
+                        </div>
+                        <div class="sendto-container">
+                           <a class="action" href="#">
+                              <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
+                                 <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                 <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="title-container action">
+                           <a class="action" href="./pages/post-AEYE.html">
+                           <span class="title">AEYE Health</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="actions-post">
+                        <div class="invest-container action">
+                           <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="description-container">
+                  <div class="description-text">
+                     <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
+                        All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
+                        AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
+                        Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
+                        A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
+                        The details here are based on information received from, and verified solely by, the company.
+                     </p>
+                  </div>
+                  <div class="description-text data-info">
+                       <div class="description-p">
+                         <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
+                       </div>
+                       <div class="description-p">
+                         <span class="description-p"><span class="value-data">70%</span> financiado</span>
+                       </div>
+                       <div class="description-p progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="description-p">
+                       <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <!--POST-->
+            <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
+              <div class="post border-curve">
+               <div class="image-post-container">
+                  <a href="./pages/post-AEYE.html">
+                  <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
+                  </a>
+                  <div class="actions-container">
+                     <div class="actions-post">
+                        <div class="save-container">
+                           <a class="action" href="#">
+                             <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                           </a>
+                        </div>
+                        <div class="sendto-container">
+                           <a class="action" href="#">
+                              <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
+                                 <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                 <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                              </svg>
+                           </a>
+                        </div>
+                        <div class="title-container action">
+                           <a class="action" href="./pages/post-AEYE.html">
+                           <span class="title">AEYE Health</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="actions-post">
+                        <div class="invest-container action">
+                           <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="description-container">
+                  <div class="description-text">
+                     <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
+                        All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
+                        AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
+                        Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
+                        A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
+                        The details here are based on information received from, and verified solely by, the company.
+                     </p>
+                  </div>
+                  <div class="description-text data-info">
+                       <div class="description-p">
+                         <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
+                       </div>
+                       <div class="description-p">
+                         <span class="description-p"><span class="value-data">70%</span> financiado</span>
+                       </div>
+                       <div class="description-p progress">
+                        <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="description-p">
+                       <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <!--POST-->
+            <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
+             <div class="post border-curve">
+                <div class="image-post-container">
+                   <a href="./pages/post-DEEPER.html">
+                   <img class="img-post" src="https://ksr-ugc.imgix.net/assets/035/352/614/e6b73d8639c8622a61f500d74a485894_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1635181652&auto=format&frame=1&q=92&s=b3ff32d3ac66000ad2131083a380ec9b" alt="image-post-proyect-Deeper-Connectt">
+                   </a>
+                   <div class="actions-container">
+                      <div class="actions-post">
+                         <div class="save-container">
+                            <a class="action" href="#">
+                              <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                            </a>
+                         </div>
+                         <div class="sendto-container">
+                            <a class="action" href="#">
+                               <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
+                                  <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                  <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                               </svg>
+                            </a>
+                         </div>
+                         <div class="title-container action">
+                            <a class="action" href="./pages/post-DEEPER.html">
+                            <span class="title">Deeper Connect</span>
+                            </a>
+                         </div>
+                      </div>
+                      <div class="actions-post">
+                         <div class="invest-container action">
+                            <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="description-container">
+                   <div class="description-text">
+                      <p class="description-p">Deeper Connect Pico is the world’s thinnest, lightest, smallest, and yet the most unique and powerful cybersecurity hardware device, which integrates a 7-layer enterprise-grade firewall and the world’s one and only Decentralized VPN (DPN).
+                      </p>
+                   </div>
+                   <div class="description-text data-info">
+                        <div class="description-p">
+                          <span class="description-p"><span class="value-data">$137.000</span> contribuido</span>
+                        </div>
+                        <div class="description-p">
+                          <span class="description-p"><span class="value-data">35%</span> financiado</span>
+                        </div>
+                        <div class="description-p progress">
+                         <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                       </div>
+                       <div class="description-p">
+                        <span class="description-p"><span class="value-data">45 días</span> para finalizar</span>
+                      </div>
+                   </div>
+                </div>
+             </div>
+           </div>
+
+           <!--POST-->
+           <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
+             <div class="post border-curve">
+              <div class="image-post-container">
+                 <a href="./pages/post-AEYE.html">
+                 <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
+                 </a>
+                 <div class="actions-container">
+                    <div class="actions-post">
+                       <div class="save-container">
+                          <a class="action" href="#">
+                            <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                          </a>
+                       </div>
+                       <div class="sendto-container">
+                          <a class="action" href="#">
+                             <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
+                                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                             </svg>
+                          </a>
+                       </div>
+                       <div class="title-container action">
+                          <a class="action" href="./pages/post-AEYE.html">
+                          <span class="title">AEYE Health</span>
+                          </a>
+                       </div>
+                    </div>
+                    <div class="actions-post">
+                       <div class="invest-container action">
+                          <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="description-container">
+                 <div class="description-text">
+                    <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
+                       All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
+                       AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
+                       Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
+                       A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
+                       The details here are based on information received from, and verified solely by, the company.
+                    </p>
+                 </div>
+                 <div class="description-text data-info">
+                      <div class="description-p">
+                        <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
+                      </div>
+                      <div class="description-p">
+                        <span class="description-p"><span class="value-data">70%</span> financiado</span>
+                      </div>
+                      <div class="description-p progress">
+                       <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                     <div class="description-p">
+                      <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           </div>
 
            <!--POST-->
            <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
@@ -308,7 +686,7 @@
             <div class="post border-curve">
                <div class="image-post-container">
                   <a href="./pages/post-DEEPER.html">
-                  <img class="img-post" src="https://ksr-ugc.imgix.net/assets/035/352/614/e6b73d8639c8622a61f500d74a485894_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1635181652&auto=format&frame=1&q=92&s=b3ff32d3ac66000ad2131083a380ec9b" alt="image-post-proyect-Deeper-Conne   cT">
+                  <img class="img-post" src="https://ksr-ugc.imgix.net/assets/035/352/614/e6b73d8639c8622a61f500d74a485894_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1635181652&auto=format&frame=1&q=92&s=b3ff32d3ac66000ad2131083a380ec9b" alt="image-post-proyect-Deeper-Connectt">
                   </a>
                   <div class="actions-container">
                      <div class="actions-post">
@@ -372,317 +750,7 @@
                    <div class="actions-post">
                       <div class="save-container">
                          <a class="action" href="#">
-                           <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
-                         </a>
-                      </div>
-                      <div class="sendto-container">
-                         <a class="action" href="#">
-                            <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
-                               <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                               <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                            </svg>
-                         </a>
-                      </div>
-                      <div class="title-container action">
-                         <a class="action" href="./pages/post-AEYE.html">
-                         <span class="title">AEYE Health</span>
-                         </a>
-                      </div>
-                   </div>
-                   <div class="actions-post">
-                      <div class="invest-container action">
-                         <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="description-container">
-                <div class="description-text">
-                   <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
-                      All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
-                      AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
-                      Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
-                      A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
-                      The details here are based on information received from, and verified solely by, the company.
-                   </p>
-                </div>
-                <div class="description-text data-info">
-                     <div class="description-p">
-                       <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
-                     </div>
-                     <div class="description-p">
-                       <span class="description-p"><span class="value-data">70%</span> financiado</span>
-                     </div>
-                     <div class="description-p progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="description-p">
-                     <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
-                   </div>
-                </div>
-             </div>
-          </div>
-          </div>
-
-          <!--POST-->
-          <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
-            <div class="post border-curve">
-             <div class="image-post-container">
-                <a href="./pages/post-AEYE.html">
-                <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
-                </a>
-                <div class="actions-container">
-                   <div class="actions-post">
-                      <div class="save-container">
-                         <a class="action" href="#">
-                           <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
-                         </a>
-                      </div>
-                      <div class="sendto-container">
-                         <a class="action" href="#">
-                            <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
-                               <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                               <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                            </svg>
-                         </a>
-                      </div>
-                      <div class="title-container action">
-                         <a class="action" href="./pages/post-AEYE.html">
-                         <span class="title">AEYE Health</span>
-                         </a>
-                      </div>
-                   </div>
-                   <div class="actions-post">
-                      <div class="invest-container action">
-                         <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="description-container">
-                <div class="description-text">
-                   <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
-                      All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
-                      AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
-                      Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
-                      A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
-                      The details here are based on information received from, and verified solely by, the company.
-                   </p>
-                </div>
-                <div class="description-text data-info">
-                     <div class="description-p">
-                       <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
-                     </div>
-                     <div class="description-p">
-                       <span class="description-p"><span class="value-data">70%</span> financiado</span>
-                     </div>
-                     <div class="description-p progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="description-p">
-                     <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
-                   </div>
-                </div>
-             </div>
-          </div>
-          </div>
-
-          <!--POST-->
-          <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
-           <div class="post border-curve">
-              <div class="image-post-container">
-                 <a href="./pages/post-DEEPER.html">
-                 <img class="img-post" src="https://ksr-ugc.imgix.net/assets/035/352/614/e6b73d8639c8622a61f500d74a485894_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1635181652&auto=format&frame=1&q=92&s=b3ff32d3ac66000ad2131083a380ec9b" alt="image-post-proyect-Deeper-Connectt">
-                 </a>
-                 <div class="actions-container">
-                    <div class="actions-post">
-                       <div class="save-container">
-                          <a class="action" href="#">
                             <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
-                          </a>
-                       </div>
-                       <div class="sendto-container">
-                          <a class="action" href="#">
-                             <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
-                                <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                                <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                             </svg>
-                          </a>
-                       </div>
-                       <div class="title-container action">
-                          <a class="action" href="./pages/post-DEEPER.html">
-                          <span class="title">Deeper Connect</span>
-                          </a>
-                       </div>
-                    </div>
-                    <div class="actions-post">
-                       <div class="invest-container action">
-                          <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              <div class="description-container">
-                 <div class="description-text">
-                    <p class="description-p">Deeper Connect Pico is the world’s thinnest, lightest, smallest, and yet the most unique and powerful cybersecurity hardware device, which integrates a 7-layer enterprise-grade firewall and the world’s one and only Decentralized VPN (DPN).
-                    </p>
-                 </div>
-                 <div class="description-text data-info">
-                      <div class="description-p">
-                        <span class="description-p"><span class="value-data">$137.000</span> contribuido</span>
-                      </div>
-                      <div class="description-p">
-                        <span class="description-p"><span class="value-data">35%</span> financiado</span>
-                      </div>
-                      <div class="description-p progress">
-                       <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                     </div>
-                     <div class="description-p">
-                      <span class="description-p"><span class="value-data">45 días</span> para finalizar</span>
-                    </div>
-                 </div>
-              </div>
-           </div>
-         </div>
-
-         <!--POST-->
-         <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
-           <div class="post border-curve">
-            <div class="image-post-container">
-               <a href="./pages/post-AEYE.html">
-               <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
-               </a>
-               <div class="actions-container">
-                  <div class="actions-post">
-                     <div class="save-container">
-                        <a class="action" href="#">
-                          <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
-                        </a>
-                     </div>
-                     <div class="sendto-container">
-                        <a class="action" href="#">
-                           <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
-                              <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                              <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                           </svg>
-                        </a>
-                     </div>
-                     <div class="title-container action">
-                        <a class="action" href="./pages/post-AEYE.html">
-                        <span class="title">AEYE Health</span>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="actions-post">
-                     <div class="invest-container action">
-                        <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="description-container">
-               <div class="description-text">
-                  <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
-                     All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
-                     AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
-                     Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
-                     A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
-                     The details here are based on information received from, and verified solely by, the company.
-                  </p>
-               </div>
-               <div class="description-text data-info">
-                    <div class="description-p">
-                      <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
-                    </div>
-                    <div class="description-p">
-                      <span class="description-p"><span class="value-data">70%</span> financiado</span>
-                    </div>
-                    <div class="description-p progress">
-                     <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                   </div>
-                   <div class="description-p">
-                    <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-         </div>
-
-         <!--POST-->
-         <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
-           <div class="post border-curve">
-            <div class="image-post-container">
-               <a href="./pages/post-AEYE.html">
-               <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
-               </a>
-               <div class="actions-container">
-                  <div class="actions-post">
-                     <div class="save-container">
-                        <a class="action" href="#">
-                          <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
-                        </a>
-                     </div>
-                     <div class="sendto-container">
-                        <a class="action" href="#">
-                           <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
-                              <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                              <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                           </svg>
-                        </a>
-                     </div>
-                     <div class="title-container action">
-                        <a class="action" href="./pages/post-AEYE.html">
-                        <span class="title">AEYE Health</span>
-                        </a>
-                     </div>
-                  </div>
-                  <div class="actions-post">
-                     <div class="invest-container action">
-                        <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="description-container">
-               <div class="description-text">
-                  <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
-                     All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
-                     AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
-                     Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
-                     A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
-                     The details here are based on information received from, and verified solely by, the company.
-                  </p>
-               </div>
-               <div class="description-text data-info">
-                    <div class="description-p">
-                      <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
-                    </div>
-                    <div class="description-p">
-                      <span class="description-p"><span class="value-data">70%</span> financiado</span>
-                    </div>
-                    <div class="description-p progress">
-                     <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                   </div>
-                   <div class="description-p">
-                    <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-         </div>
-
-         <!--POST-->
-         <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
-          <div class="post border-curve">
-             <div class="image-post-container">
-                <a href="./pages/post-DEEPER.html">
-                <img class="img-post" src="https://ksr-ugc.imgix.net/assets/035/352/614/e6b73d8639c8622a61f500d74a485894_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1635181652&auto=format&frame=1&q=92&s=b3ff32d3ac66000ad2131083a380ec9b" alt="image-post-proyect-Deeper-Connectt">
-                </a>
-                <div class="actions-container">
-                   <div class="actions-post">
-                      <div class="save-container">
-                         <a class="action" href="#">
-                           <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
                          </a>
                       </div>
                       <div class="sendto-container">
@@ -694,8 +762,8 @@
                          </a>
                       </div>
                       <div class="title-container action">
-                         <a class="action" href="./pages/post-DEEPER.html">
-                         <span class="title">Deeper Connect</span>
+                         <a class="action" href="./pages/post-AEYE.html">
+                         <span class="title">AEYE Health</span>
                          </a>
                       </div>
                    </div>
@@ -708,91 +776,34 @@
              </div>
              <div class="description-container">
                 <div class="description-text">
-                   <p class="description-p">Deeper Connect Pico is the world’s thinnest, lightest, smallest, and yet the most unique and powerful cybersecurity hardware device, which integrates a 7-layer enterprise-grade firewall and the world’s one and only Decentralized VPN (DPN).
+                   <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
+                      All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
+                      AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
+                      Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
+                      A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
+                      The details here are based on information received from, and verified solely by, the company.
                    </p>
                 </div>
                 <div class="description-text data-info">
                      <div class="description-p">
-                       <span class="description-p"><span class="value-data">$137.000</span> contribuido</span>
+                       <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
                      </div>
                      <div class="description-p">
-                       <span class="description-p"><span class="value-data">35%</span> financiado</span>
+                       <span class="description-p"><span class="value-data">70%</span> financiado</span>
                      </div>
                      <div class="description-p progress">
-                      <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                     <div class="description-p">
-                     <span class="description-p"><span class="value-data">45 días</span> para finalizar</span>
+                     <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
                    </div>
                 </div>
              </div>
+          </div>
           </div>
         </div>
-
-          <!--POST-->
-          <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
-            <div class="post border-curve">
-             <div class="image-post-container">
-                <a href="./pages/post-AEYE.html">
-                <img class="img-post" src="./media/biometric.jpg" alt="image-post-proyect-AEYE">
-                </a>
-                <div class="actions-container">
-                   <div class="actions-post">
-                      <div class="save-container">
-                         <a class="action" href="#">
-                            <svg class="save" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
-                         </a>
-                      </div>
-                      <div class="sendto-container">
-                         <a class="action" href="#">
-                            <svg aria-label="Compartir publicación" class="sendto" height="10" role="img" viewBox="0 0 24 24" width="10">
-                               <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
-                               <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
-                            </svg>
-                         </a>
-                      </div>
-                      <div class="title-container action">
-                         <a class="action" href="./pages/post-AEYE.html">
-                         <span class="title">AEYE Health</span>
-                         </a>
-                      </div>
-                   </div>
-                   <div class="actions-post">
-                      <div class="invest-container action">
-                         <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="description-container">
-                <div class="description-text">
-                   <p class="description-p">AEYE Health has created a simple, AI-driven testing system for an array of eye diseases including diabetic retinopathy, glaucoma and AMD without requiring the knowledge or training of an ophthalmologist.
-                      All people with diabetes, some 35 million people in the US alone, are at risk of diabetic retinopathy, which is the top cause of blindness in the working-age population. The disease can be treated and blindness prevented if it is detected early. Diabetics should be screened annually, but due to a shortage of ophthalmologists, high cost, and lack of access, only 25% of those who need it receive the screening.
-                      AEYE Health is a Tel Aviv and New York-based startup whose automated, AI-based diagnostic screening technology for retinal imaging is targeted initially at the large and growing diabetic retinopathy market. The company also plans to launch its platform that currently screens 12 additional eye indications, including glaucoma, AMD as well as systemic indications such as cardiovascular risk and dementia.
-                      Instead of needing an annual appointment with an ophthalmologist for screening, patients will be able to receive initial screening from their primary care physician or at other healthcare facilities including retail pharmacies. Only patients for which the AI system detects potential disease need to be referred to a specialist.
-                      A billable CPT code already exists for AI-based diabetic retinopathy screening, enabling physicians and other health care providers to generate additional revenue while protecting the vision of their patients.
-                      The details here are based on information received from, and verified solely by, the company.
-                   </p>
-                </div>
-                <div class="description-text data-info">
-                     <div class="description-p">
-                       <span class="description-p"><span class="value-data">$86.000</span> contribuido</span>
-                     </div>
-                     <div class="description-p">
-                       <span class="description-p"><span class="value-data">70%</span> financiado</span>
-                     </div>
-                     <div class="description-p progress">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="description-p">
-                     <span class="description-p"><span class="value-data">25 días</span> para finalizar</span>
-                   </div>
-                </div>
-             </div>
-          </div>
-          </div>
       </div>
-      </div>
+    </section>
 
 
       <!--Footer-->
