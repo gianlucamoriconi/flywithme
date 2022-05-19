@@ -245,6 +245,24 @@ h4, h4.h4 {
   font-size: 20px;
   font-weight: 600; }
 
+.mw-65 {
+  max-width: 65px; }
+
+.mw-100 {
+  max-width: 100px; }
+
+.mw-200 {
+  max-width: 200px; }
+
+.mw-300 {
+  max-width: 300px; }
+
+.mw-400 {
+  max-width: 400px; }
+
+.mw-500 {
+  max-width: 500px; }
+
 .mw-700 {
   max-width: 700px; }
 
@@ -257,8 +275,44 @@ h4, h4.h4 {
 .mw-1400 {
   max-width: 1400px; }
 
+.minw-65 {
+  min-width: 65px; }
+
+.minw-100 {
+  min-width: 100px; }
+
+.minw-200 {
+  min-width: 200px; }
+
+.minw-300 {
+  min-width: 300px; }
+
+.minw-400 {
+  min-width: 400px; }
+
+.minw-500 {
+  min-width: 500px; }
+
+.minw-700 {
+  min-width: 700px; }
+
+.minw-900 {
+  min-width: 900px; }
+
+.minw-1200 {
+  min-width: 1200px; }
+
+.minw-1400 {
+  min-width: 1400px; }
+
 .w-20 {
   width: 20%; }
+
+.w-25 {
+  width: 25%; }
+
+.w-30 {
+  width: 30%; }
 
 .w-50 {
   width: 50%; }
@@ -266,8 +320,14 @@ h4, h4.h4 {
 .w-60 {
   width: 60%; }
 
+.w-75 {
+  width: 75%; }
+
 .w-80 {
   width: 80%; }
+
+.w-90 {
+  width: 90%; }
 
 .w-100 {
   width: 100%; }
@@ -541,6 +601,9 @@ div.list ul {
 
 .navbar-head i.fa-solid.fa-square-plus {
   font-size: 1.9em; }
+
+.fa-money-bill-1-wave {
+  font-size: 22px; }
 
 .submenu {
   display: none;
@@ -816,7 +879,6 @@ div.progress {
   display: block;
   font-size: 15px;
   font-weight: 600 !important;
-  width: 150px;
   text-align: center;
   border-radius: 10px;
   margin: auto;
@@ -1196,6 +1258,9 @@ nav.navbar.navbar-light.bg-light {
     border-color: unset;
     padding-top: 5px; } }
 
+#navbar-bottom .navbar-toggler {
+  padding: 0.25rem 0.45rem; }
+
 .navbar-head .navbar-toggler:focus {
   box-shadow: unset !important; }
 
@@ -1218,7 +1283,7 @@ nav.navbar.navbar-light.bg-light {
   .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus {
     font-size: 17px; }
   .button-info {
-    font-size: 9px; }
+    font-size: 10px; }
   .navbar-head .nav-link {
     font-size: 11px; } }
 
@@ -1237,6 +1302,9 @@ nav.navbar.navbar-light.bg-light {
 button.navbar-toggler i.fa-ellipsis {
   color: var(--color1);
   transition: 0.2s; }
+
+.navbar-head .fa-filter {
+  font-size: 17px; }
 
 a.container-filter-menu:active i.fa-filter {
   filter: brightness(1.5); }

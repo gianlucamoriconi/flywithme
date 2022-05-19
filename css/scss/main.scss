@@ -92,13 +92,19 @@ h4, h4.h4{
 }
 
 
-@each $m-width in 700, 900, 1200, 1400{
+@each $m-width in 65, 100, 200, 300, 400, 500, 700, 900, 1200, 1400{
   .mw-#{$m-width}{
     max-width: #{$m-width}px;
   }
 }
 
-@each $width-percent in 20, 50, 60, 80, 100{
+@each $m-width in 65, 100, 200, 300, 400, 500, 700, 900, 1200, 1400{
+  .minw-#{$m-width}{
+    min-width: #{$m-width}px;
+  }
+}
+
+@each $width-percent in 20, 25, 30, 50, 60, 75, 80, 90, 100{
   .w-#{$width-percent}{
     width: #{$width-percent}#{$percentSymb};
   }
@@ -446,6 +452,10 @@ padding-left: 0;
 
 .navbar-head i.fa-solid.fa-square-plus {
   font-size: 1.9em;
+}
+
+.fa-money-bill-1-wave{
+    font-size: 22px;
 }
 
 
@@ -804,7 +814,6 @@ div.progress {
   display: block;
   font-size: 15px;
   font-weight: map-get($font, bold)!important;
-  width: 150px;
   text-align: center;
   border-radius: 10px;
   margin: auto;
@@ -1314,6 +1323,10 @@ nav.navbar.navbar-light.bg-light {
   }
 }
 
+#navbar-bottom .navbar-toggler{
+  padding: 0.25rem 0.45rem;
+}
+
 .navbar-head .navbar-toggler:focus{
   box-shadow: unset!important;
 }
@@ -1346,7 +1359,7 @@ nav.navbar.navbar-light.bg-light {
     font-size: 17px;
   }
   .button-info{
-    font-size: 9px;
+    font-size: 10px;
   }
   .navbar-head .nav-link{
     font-size: 11px;
@@ -1371,6 +1384,10 @@ nav.navbar.navbar-light.bg-light {
 button.navbar-toggler i.fa-ellipsis {
     color: var(--color1);
     transition: 0.2s;
+}
+
+.navbar-head .fa-filter{
+  font-size: 17px;
 }
 
 a.container-filter-menu:active i.fa-filter{
