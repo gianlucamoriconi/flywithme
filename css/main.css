@@ -870,7 +870,8 @@ select.filter {
 .container-main {
   display: flex;
   flex-wrap: wrap;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 #carousel-featured-proyects .carousel-caption {
   width: 100%;
