@@ -485,7 +485,7 @@ h4, h4.h4 {
   *[class*="fs-"].description-statistics {
     font-size: 10px !important; }
   .text-description-section {
-    font-size: 12px; } }
+    font-size: 13px; } }
 
 #featured-proyects {
   grid-area: featured-carousel; }
@@ -550,6 +550,105 @@ footer {
 @media (max-width: 1400px) {
   body {
     margin-bottom: 30px !important; } }
+
+.fade-in-2 {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s; }
+
+.fade-in-2-delay-1 {
+  animation: fadeInDelay2 2s;
+  -webkit-animation: fadeInDelay2 2s;
+  -moz-animation: fadeInDelay2 2s;
+  -o-animation: fadeInDelay2 2s;
+  -ms-animation: fadeInDelay2 2s; }
+
+.fade-in-2-delay-2 {
+  animation: fadeInDelay3 2s;
+  -webkit-animation: fadeInDelay3 2s;
+  -moz-animation: fadeInDelay3 2s;
+  -o-animation: fadeInDelay3 2s;
+  -ms-animation: fadeInDelay3 2s; }
+
+@keyframes fadeInDelay2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeInDelay2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInDelay2 {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeInDelay3 {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeInDelay3 {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInDelay3 {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 div.list ul {
   padding-left: 0; }
@@ -892,7 +991,7 @@ div.progress {
 
 @media (max-width: 480px) {
   .description-p {
-    font-size: 11px; } }
+    font-size: 12px; } }
 
 .value-data {
   font-weight: 600; }
@@ -1347,6 +1446,8 @@ nav.navbar.navbar-light.bg-light {
   .button-info {
     font-size: 10px; }
   .navbar-head .nav-link {
+    font-size: 12px; }
+  .navbar-head .nav-link-icon {
     font-size: 11px; } }
 
 .navbar-collapse > .navbar-nav {
