@@ -26,6 +26,11 @@ body{
 html{
   background-color: var(--background) ;
 }
+
+.color-background{
+  background-color: var(--background);
+}
+
 .navbar-container{
   background: var(--background);
 }
@@ -54,7 +59,7 @@ a.link{
   color: var(--color1);
 }
 
-.container-main {
+.container-main-colorful {
   background-color: var(--background-with-color);
 }
 
@@ -116,6 +121,10 @@ a.another-action{
 
 .transparent{
   background-color: transparent;
+}
+
+.shadow{
+
 }
 
 .main-color{
@@ -233,4 +242,17 @@ form input:not([type="checkbox"]), form button{
 
 .button-info{
   color: var(--main);
+}
+
+.offcanvas-title{
+  color: var(--main);
+}
+
+.title-option{
+  color: var(--main);
+}
+
+button.btn-close{
+  color: var(--main);
+  opacity: 1;
 }

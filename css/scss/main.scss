@@ -21,7 +21,7 @@ img{
   height: auto;
 }
 
-li, ul{
+li, dl, ol, ul{
   list-style: none;
   padding: 0;
   margin: 0;
@@ -64,7 +64,7 @@ $font:(
   mid-light: 300,
   medium: 400,
   bold: 600,
-  extrabold: 700
+  extrabold: 800
 );
 
 p{
@@ -77,8 +77,15 @@ h1, h1.h1{
 }
 
 h2, h2.h2{
-  font-size: 27px;
-  font-weight: map-get($font, bold);
+  font-size: 34px;
+  font-weight: map-get($font, extrabold);
+}
+
+@media (max-width: 767px){
+  h2, h2.h2{
+    font-size: 27px;
+    font-weight: map-get($font, extrabold);
+  }
 }
 
 h3, h3.h3{
@@ -91,6 +98,11 @@ h4, h4.h4{
   font-weight: map-get($font, bold);
 }
 
+@each $m-width in 65, 70, 80, 90{
+  .mw-#{$m-width}pr{
+    max-width: #{$m-width}#{$percentSymb};
+  }
+}
 
 @each $m-width in 65, 100, 200, 300, 400, 500, 700, 900, 1200, 1400{
   .mw-#{$m-width}{
@@ -176,7 +188,6 @@ h4, h4.h4{
   }
 }
 
-/*Agregado para BOOTSTRAP*/
 .p-15-sides{
   padding-left: 15px;
   padding-right: 15px;
@@ -189,7 +200,9 @@ h4, h4.h4{
   }
 }
 
-/*FIN Agregado para BOOTSTRAP*/
+.mt-n5{
+  margin-top: -50px!important;
+}
 
 .sticky{
   position: sticky;
@@ -214,6 +227,12 @@ h4, h4.h4{
       margin: auto;
       justify-content: center;
   }
+}
+
+.font-accent{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: 800;
+  color: #4d5646;
 }
 
 #home{
@@ -242,6 +261,25 @@ h4, h4.h4{
   }
 }
 
+@media (max-width: 767px){
+  .title-statistics{
+    font-size: 15px;
+  }
+
+  .description-statistics{
+    font-size: 10px!important;
+  }
+
+  *[class*="fs-"].description-statistics{
+    font-size: 10px!important;
+  }
+
+  .text-description-section{
+    font-size: 12px;
+  }
+}
+
+
 
 #featured-proyects{
   grid-area: featured-carousel;
@@ -262,6 +300,19 @@ h4, h4.h4{
 #sectionHorizontal{
   grid-area: horizontalsection;
 }
+
+
+.d-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description-section{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 
 #filters{
   grid-area: filters;
@@ -378,6 +429,16 @@ padding-left: 0;
   padding-left: 20px;
   padding-right: 20px;
   min-height: 50px;
+}
+
+.custom-shadow{
+  box-shadow: $shadow-post-box !important;
+  -webkit-box-shadow: $shadow-post-box !important;
+  -moz-box-shadow: $shadow-post-box !important;
+}
+
+.extra-separator-50{
+  height: 50px;
 }
 
 .transparent {
@@ -1430,4 +1491,16 @@ $button-sign-redes: (
     background-color: $color;
     border: 1px solid $color;
   }
+}
+
+.offcanvas-title{
+  font-weight: 600;
+}
+
+.offcanvas-body .title-option{
+font-size: 15px;
+}
+
+.btn-close{
+  font-size: 15px;
 }
