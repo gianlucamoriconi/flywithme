@@ -481,11 +481,11 @@ h4, h4.h4 {
   .title-statistics {
     font-size: 15px; }
   .description-statistics {
-    font-size: 10px !important; }
+    font-size: 12px !important; }
   *[class*="fs-"].description-statistics {
-    font-size: 10px !important; }
+    font-size: 12px !important; }
   .text-description-section {
-    font-size: 13px; } }
+    font-size: 14px; } }
 
 #featured-proyects {
   grid-area: featured-carousel; }
