@@ -18,7 +18,7 @@
    </head>
    <body id="home" class="menu-fixed">
       <!--Header-->
-      <header id="navbar-mobile" class="navbar-head fixed-1400">
+      <header id="navbar-mobile" class="navbar-head fixed-1400 z-index-9000">
          <nav class="navbar-container">
             <nav class="navbar navbar-light bg-light">
               <div id="logo-menu-container" class="logo-container">
@@ -29,57 +29,6 @@
                  </a>
               </div>
               <div class="head-menu-container">
-                <div class="container-fluid nav-link">
-                  <a class="container-filter-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                  <i class="fa-solid fa-filter"></i>
-                  </a>
-
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtros</h5>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <div class="filter-box">
-                        <div class="filter-list">
-                           <div class="filter-container">
-                             <p class="title-option">¿Categoría?</p>
-                              <select class="filter filter-1">
-                                 <option value="tecnology">Todos los proyectos</option>
-                                 <option value="tecnology">Tecnología</option>
-                                 <option value="realstate">Inmobiliaria</option>
-                                 <option value="service">Servicios</option>
-                              </select>
-                           </div>
-                           <div class="filter-container">
-                              <p class="title-option">¿En qué país?</p>
-                              <select class="filter filter-1">
-                                 <option value="all">Todo el mundo</option>
-                                 <option value="argentina">Argentina</option>
-                                 <option value="chile">Chile</option>
-                                 <option value="colombia">Colombia</option>
-                                 <option value="uruguay">Uruguay</option>
-                                 <option value="mexico">México</option>
-                              </select>
-                           </div>
-                           <div class="filter-container">
-                              <p class="title-option">Ordenado por:</p>
-                              <select class="filter filter-1">
-                                 <option value="popularidad">mayor popularidad</option>
-                                 <option value="nuevo primero">más nuevo primero</option>
-                                 <option value="fin mas tarde primero">finaliza más tarde primero</option>
-                                 <option value="mayor monto">mayor monto de financiamiento</option>
-                                 <option value="menor">menor monto de financiamiento</option>
-                                 <option value="mas patrocinadores">mayor número de patrocinadores</option>
-                                 <option value="menos patrocinadores">menor número de patrocinadores</option>
-                              </select>
-                           </div>
-                         </div>
-                         <button class="invest-button btn-filter hover-opacity" type="button" aria-label="Close" name="button">Aplicar filtros</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </nav>
          </nav>
@@ -117,7 +66,7 @@
             </nav>
          </div>
       </nav>
-      <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400">
+      <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400 z-index-9999">
          <div class="navbar-container">
             <nav class="navbar navbar-expand-xxl navbar-light bg-light">
               <div class="column-nav">
@@ -163,7 +112,7 @@
       </nav>
       <!--Section horizontal-->
       <section id="sectionHorizontal" class="horizontal center h-30">
-        <div class="">
+        <div>
           <h1 class="frase">Potenciá proyectos y ganá con ellos.</h1>
         </div>
       </section>
@@ -209,6 +158,59 @@
       <!--Feed-->
       <section id="feed">
         <h2 class="h2 p-5 font-accent center">Proyectos donde invertir</h2>
+        <div class="w-100 container-fluid nav-link text-end p-3 sticky filters-sticky z-index-9001">
+          <a class="container-filter-menu color-main p-2 rounded shadow-sm" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <span>Filtros</span>
+            <i class="fa-solid fa-filter"></i>
+          </a>
+          <div class="container-fluid nav-link">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtros</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="filter-box">
+                  <div class="filter-list">
+                     <div class="filter-container">
+                       <p class="title-option">¿Categoría?</p>
+                        <select class="filter filter-1">
+                           <option value="tecnology">Todos los proyectos</option>
+                           <option value="tecnology">Tecnología</option>
+                           <option value="realstate">Inmobiliaria</option>
+                           <option value="service">Servicios</option>
+                        </select>
+                     </div>
+                     <div class="filter-container">
+                        <p class="title-option">¿En qué país?</p>
+                        <select class="filter filter-1">
+                           <option value="all">Todo el mundo</option>
+                           <option value="argentina">Argentina</option>
+                           <option value="chile">Chile</option>
+                           <option value="colombia">Colombia</option>
+                           <option value="uruguay">Uruguay</option>
+                           <option value="mexico">México</option>
+                        </select>
+                     </div>
+                     <div class="filter-container">
+                        <p class="title-option">Ordenado por:</p>
+                        <select class="filter filter-1">
+                           <option value="popularidad">mayor popularidad</option>
+                           <option value="nuevo primero">más nuevo primero</option>
+                           <option value="fin mas tarde primero">finaliza más tarde primero</option>
+                           <option value="mayor monto">mayor monto de financiamiento</option>
+                           <option value="menor">menor monto de financiamiento</option>
+                           <option value="mas patrocinadores">mayor número de patrocinadores</option>
+                           <option value="menos patrocinadores">menor número de patrocinadores</option>
+                        </select>
+                     </div>
+                   </div>
+                   <button class="invest-button btn-filter hover-opacity" type="button" aria-label="Close" name="button">Aplicar filtros</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--Filters-->
         <div id="filters" class="menu-container hide-mobile-tablet p-5">
            <div class="title-container">

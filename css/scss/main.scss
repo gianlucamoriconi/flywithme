@@ -128,6 +128,12 @@ h4, h4.h4{
   }
 }
 
+@each $zindex in 900, 1000, 1200, 1500, 5000, 9000, 9001, 9999{
+  .z-index-#{$zindex}{
+    z-index: #{$zindex};
+  }
+}
+
 .w-33{
   width: 33.333%;
 }
@@ -149,7 +155,7 @@ h4, h4.h4{
     position: fixed!important;
     width: 100%;
     top: 0px;
-    z-index: 9999;
+    z-index: 9000;
   }
 
   .navbar-head.fixed-1400{
@@ -275,7 +281,7 @@ h4, h4.h4{
   }
 
   .text-description-section{
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
@@ -365,6 +371,10 @@ footer{
 @media (max-width: 1400px){
   body{
     margin-bottom: 30px!important;
+  }
+
+  body#account{
+    margin-bottom: 70px!important;
   }
 }
 
@@ -715,6 +725,18 @@ padding-left: 0;
   }
 }
 
+.offcanvas-title{
+  font-weight: 600;
+}
+
+.offcanvas-body .title-option{
+font-size: 15px;
+}
+
+.profile-mobile .offcanvas-start{
+  width: 300px!important;
+}
+
 .filter {
     padding: 10px;
     margin: auto;
@@ -955,7 +977,7 @@ div.progress {
 
 @media (max-width: 480px) {
   .title{
-    font-size: 11px;
+    font-size: 13px;
   }
 }
 
@@ -983,6 +1005,10 @@ div.progress {
   display: inline-block;
   margin-left: 10px;
   transition: .2s;
+}
+
+.filters-sticky{
+  top: -3px!important;
 }
 
 /* EXTEND */
@@ -1541,7 +1567,7 @@ button.navbar-toggler i.fa-ellipsis {
     transition: 0.2s;
 }
 
-.navbar-head .fa-filter{
+.container-fluid.nav-link .fa-filter{
   font-size: 17px;
 }
 
@@ -1585,14 +1611,6 @@ $button-sign-redes: (
     background-color: $color;
     border: 1px solid $color;
   }
-}
-
-.offcanvas-title{
-  font-weight: 600;
-}
-
-.offcanvas-body .title-option{
-font-size: 15px;
 }
 
 .btn-close{

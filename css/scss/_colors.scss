@@ -2,6 +2,8 @@
   --background: #ffffff;
   --background-with-color: #e6fff8;
   --background-lighter: #f4ffe2;
+  --background-color1: #cde4f1;
+  --background-color2: #cdf1d4;
   --main: #000000;
   --main-lighter: #4c4c4c;
   /* --color1: #ff3e73; */
@@ -99,7 +101,7 @@ a.another-action{
   color: var(--color1);
 }
 
-.navbar-head .fa-filter{
+.container-fluid.nav-link .fa-filter{
   color: var(--color1);
 }
 
@@ -178,6 +180,18 @@ svg.logo-google {
   background-color: var(--background);
 }
 
+.filters-sticky{
+  color: var(--color1)!important;
+}
+
+.color-main{
+  color: var(--main)!important;
+}
+
+.container-filter-menu {
+    background-color: var(--background);
+}
+
 #carousel-featured-proyects{
   i.fa-solid.fa-circle-arrow-right, & i.fa-solid.fa-circle-arrow-left{
     color: var(--color1);
@@ -214,15 +228,15 @@ form input:not([type="checkbox"]), form button{
 }
 
 .left-side{
-  background-color: #cdf1d4;
+  background-color: var(--background-color2);
 }
 
 #login .left-side{
-  background-color: #cde4f1;
+  background-color: var(--background-color1);
 }
 
 #register .left-side{
-  background-color: #cdf1d4;
+  background-color: var(--background-color2);
 }
 
 .form-side{
@@ -246,6 +260,10 @@ form input:not([type="checkbox"]), form button{
 
 .offcanvas-title{
   color: var(--main);
+}
+
+.profile-mobile .offcanvas-start{
+  background-color: var(--background-color2);
 }
 
 .title-option{
