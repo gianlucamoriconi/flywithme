@@ -591,7 +591,7 @@ footer {
 @media (max-width: 1400px) {
   body {
     margin-bottom: 30px !important; }
-  body#account, body#login {
+  #account, #login {
     margin-bottom: 70px !important; } }
 
 .fade-in-2 {
