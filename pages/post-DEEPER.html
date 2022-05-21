@@ -15,7 +15,7 @@
       <script src="https://kit.fontawesome.com/ea85b50d44.js" crossorigin="anonymous"></script>
       <title>Proyecto Deeper</title>
    </head>
-   <body id="post">
+   <body id="post" class="menu-fixed">
      <!--Header-->
      <header id="navbar-mobile" class="navbar-head fixed-1400 hide-desktop">
         <nav class="navbar-container">
@@ -31,7 +31,7 @@
                <div class="container-fluid">
                  <ul class="navbar-nav">
                   <li class="nav-item">
-                   <a class="nav-link" href="../index.html#feed">Ver más proyectos</a>
+                   <a class="nav-link fs-6" href="../index.html#feed">Ver más proyectos</a>
                  </li>
                 </ul>
                </div>
@@ -54,7 +54,7 @@
                  <div id="navbarNavDropdown">
                    <ul class="navbar-nav">
                      <li class="nav-item">
-                       <a class="nav-link" href="./start-proyect.html">Empezar un proyecto</a>
+                       <a class="nav-link" href="./start-proyect.html">Crear proyecto</a>
                      </li>
                      <li class="nav-item dropdown">
                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -73,30 +73,59 @@
         </div>
      </nav>
      <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400">
-        <div class="navbar-container">
+        <div class="navbar-container col-12">
            <nav class="navbar navbar-expand-xxl navbar-light bg-light">
-             <div id="logo-menu-container" class="logo-container">
-               <ul class="navbar-nav">
-                 <li class="nav-item">
-                   <a class="action btn-primary left hover-opacity" href="./pages/start-proyect.html">Contribuir</a>
-                 </li>
-               </ul>
+             <div class="w-25">
+               <div class="column-nav col-3">
+                 <ul class="navbar-nav">
+                   <li class="nav-item nav-link-icon">
+                     <a class="action btn-primary left hover-opacity" href="#"><i class="fa-solid fa-money-bill-1-wave"></i></a>
+                   </li>
+                 </ul>
+               </div>
              </div>
-             <div class="head-menu-container">
-               <div class="container-fluid">
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bottom-dropdown" aria-controls="navbar-bottom-dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                   <i class="fa-solid fa-user"></i>
-                   <span class="button-info">Mi cuenta</span>
-                 </button>
-                 <div class="collapse navbar-collapse" id="navbar-bottom-dropdown">
-                   <ul class="navbar-nav">
-                     <li class="nav-item">
-                       <a class="nav-link" href="./login.html">Iniciar sesión</a>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="./register.html">Crear cuenta</a>
-                     </li>
-                   </ul>
+             <div class="w-75 container-fluid">
+               <div class="column-nav col-3">
+                     <a class="nav-link" href="../index.html">
+                       <div class="home-button center m-auto w-fit">
+                         <i class="fa-solid fa-house"></i>
+                         <span class="button-info">Inicio</span>
+                       </div>
+                     </a>
+               </div>
+               <div class="column-nav col-3">
+                 <a class="nav-link" href="./start-proyect.html">
+                   <div class="new-proyect-button center m-auto w-fit">
+                     <i class="fa-solid fa-square-plus"></i>
+                     <span class="button-info text-nowrap">Crear proyecto</span>
+                   </div>
+                 </a>
+               </div>
+               <div class="column-nav col-3">
+                 <div class="container-fluid minw65">
+                   <button class="column-nav navbar-toggler nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                     <div class="my-account-button center ms-auto w-fit">
+                       <i class="fa-solid fa-user mb-1"></i>
+                      <span class="button-info">Mi cuenta</span>
+                     </div>
+                   </button>
+
+                    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Mi cuenta</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body small">
+                          <ul class="navbar-nav">
+                            <li class="nav-item center">
+                              <a class="nav-link fs-6" href="./login.html">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item center">
+                              <a class="nav-link fs-6" href="./register.html">Crear cuenta</a>
+                            </li>
+                          </ul>
+                      </div>
+                    </div>
                  </div>
                </div>
              </div>

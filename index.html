@@ -12,12 +12,13 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Square+Peg&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/ea85b50d44.js" crossorigin="anonymous"></script>
       <title>Flywithme - Inicio</title>
    </head>
    <body id="home" class="menu-fixed">
       <!--Header-->
-      <header id="navbar-mobile" class="navbar-head fixed-1400">
+      <header id="navbar-mobile" class="navbar-head fixed-1400 z-index-9000 hide-desktop">
          <nav class="navbar-container">
             <nav class="navbar navbar-light bg-light">
               <div id="logo-menu-container" class="logo-container">
@@ -28,57 +29,6 @@
                  </a>
               </div>
               <div class="head-menu-container">
-                <div class="container-fluid">
-                  <a class="container-filter-menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                  <i class="fa-solid fa-filter"></i>
-                  </a>
-
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtros</h5>
-                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <div class="filter-box">
-                        <div class="filter-list">
-                           <div class="filter-container">
-                             <p class="title-option">¿Categoría?</p>
-                              <select class="filter filter-1">
-                                 <option value="tecnology">Todos los proyectos</option>
-                                 <option value="tecnology">Tecnología</option>
-                                 <option value="realstate">Inmobiliaria</option>
-                                 <option value="service">Servicios</option>
-                              </select>
-                           </div>
-                           <div class="filter-container">
-                              <p class="title-option">¿En qué país?</p>
-                              <select class="filter filter-1">
-                                 <option value="all">Todo el mundo</option>
-                                 <option value="argentina">Argentina</option>
-                                 <option value="chile">Chile</option>
-                                 <option value="colombia">Colombia</option>
-                                 <option value="uruguay">Uruguay</option>
-                                 <option value="mexico">México</option>
-                              </select>
-                           </div>
-                           <div class="filter-container">
-                              <p class="title-option">Ordenado por:</p>
-                              <select class="filter filter-1">
-                                 <option value="popularidad">mayor popularidad</option>
-                                 <option value="nuevo primero">más nuevo primero</option>
-                                 <option value="fin mas tarde primero">finaliza más tarde primero</option>
-                                 <option value="mayor monto">mayor monto de financiamiento</option>
-                                 <option value="menor">menor monto de financiamiento</option>
-                                 <option value="mas patrocinadores">mayor número de patrocinadores</option>
-                                 <option value="menos patrocinadores">menor número de patrocinadores</option>
-                              </select>
-                           </div>
-                         </div>
-                         <button class="invest-button btn-filter hover-opacity" type="button" name="button">Aplicar filtros</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </nav>
          </nav>
@@ -98,7 +48,7 @@
                   <div id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link" href="./pages/start-proyect.html">Empezar un proyecto</a>
+                        <a class="nav-link" href="./pages/start-proyect.html">Crear proyecto</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -116,45 +66,50 @@
             </nav>
          </div>
       </nav>
-      <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400">
+      <nav id="navbar-bottom" class="navbar-head hide-desktop navbar-bottom fixed-1400 z-index-9999">
          <div class="navbar-container">
             <nav class="navbar navbar-expand-xxl navbar-light bg-light">
-              <div class="column-nav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
+              <div class="column-nav col-4">
                     <a class="nav-link" href="./index.html">
-                      <i class="fa-solid fa-house"></i>
-                      <span class="button-info">Inicio</span>
+                      <div class="home-button center me-auto w-fit">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="button-info">Inicio</span>
+                      </div>
                     </a>
-                  </li>
-                </ul>
               </div>
-              <div class="column-nav">
-                <ul class="navbar-nav">
-                  <li class="nav-item center">
+              <div class="column-nav col-4">
                     <a class="nav-link" href="./pages/start-proyect.html">
-                      <i class="fa-solid fa-square-plus"></i>
-                      <span class="button-info">Crear proyecto</span>
+                      <div class="new-proyect-button center m-auto w-fit">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span class="button-info">Crear proyecto</span>
+                      </div>
                     </a>
-                  </li>
-                </ul>
               </div>
-              <div class="column-nav head-menu-container">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-bottom-dropdown" aria-controls="navbar-bottom-dropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-user"></i>
-                    <span class="button-info">Mi cuenta</span>
+              <div class="column-nav col-4">
+                <div class="container-fluid minw65">
+                  <button class="column-nav navbar-toggler nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                    <div class="my-account-button center ms-auto w-fit">
+                      <i class="fa-solid fa-user"></i>
+                     <span class="button-info">Mi cuenta</span>
+                    </div>
                   </button>
-                  <div class="collapse navbar-collapse" id="navbar-bottom-dropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/login.html">Iniciar sesión</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./pages/register.html">Crear cuenta</a>
-                      </li>
-                    </ul>
-                  </div>
+
+                   <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                     <div class="offcanvas-header">
+                       <h5 class="offcanvas-title" id="offcanvasBottomLabel">Mi cuenta</h5>
+                       <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="offcanvas-body small">
+                         <ul class="navbar-nav">
+                           <li class="nav-item center">
+                             <a class="nav-link fs-6" href="./pages/login.html">Iniciar sesión</a>
+                           </li>
+                           <li class="nav-item center">
+                             <a class="nav-link fs-6" href="./pages/register.html">Crear cuenta</a>
+                           </li>
+                         </ul>
+                     </div>
+                   </div>
                 </div>
               </div>
             </nav>
@@ -162,7 +117,7 @@
       </nav>
       <!--Section horizontal-->
       <section id="sectionHorizontal" class="horizontal center h-30">
-        <div class="">
+        <div>
           <h1 class="frase">Potenciá proyectos y ganá con ellos.</h1>
         </div>
       </section>
@@ -177,7 +132,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="./pages/post-DEEPER.html">
-              <img src="./media/DEEPER-CONNECT-Featured.jpeg" class="d-block w-100" alt="smartphone-carrusel-deeper-connect-proyect">
+              <img src="./media/deeper-connect-banner.jpg" class="d-block w-100" alt="smartphone-carrusel-deeper-connect-proyect">
               <div class="carousel-caption d-none d-md-block">
                <h5 class="title-caption-carousel">Deeper Connect Pico</h5>
                <p class="p-caption-carousel">Uno de los proyectos más rápidos financiados en el último mes.</p>
@@ -186,7 +141,7 @@
           </div>
           <div class="carousel-item">
             <a href="./pages/post-AEYE.html">
-              <img src="./media/smarthome.jpg" class="d-block w-100" alt="smarthome-proyect">
+              <img src="./media/aeye-health-100.jpg" class="d-block w-100" alt="smarthome-proyect">
               <div class="carousel-caption d-none d-md-block">
                <h5 class="title-caption-carousel">AEYE Health</h5>
                <p class="p-caption-carousel">Apoyado principalmente por el exitoso empresario Mark Alisson.</p>
@@ -207,7 +162,60 @@
 
       <!--Feed-->
       <section id="feed">
-        <h2 class="h2 p-5">Proyectos donde invertir</h2>
+        <h2 class="h2 p-5 font-accent center">Proyectos donde invertir</h2>
+        <div class="w-100 container-fluid nav-link text-end p-3 sticky filters-sticky z-index-9001 hide-desktop">
+          <a class="container-filter-menu color-main p-2 rounded shadow-sm" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <span>Filtros</span>
+            <i class="fa-solid fa-filter"></i>
+          </a>
+          <div class="container-fluid nav-link">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtros</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="filter-box">
+                  <div class="filter-list">
+                     <div class="filter-container">
+                       <p class="title-option">¿Categoría?</p>
+                        <select class="filter filter-1">
+                           <option value="tecnology">Todos los proyectos</option>
+                           <option value="tecnology">Tecnología</option>
+                           <option value="realstate">Inmobiliaria</option>
+                           <option value="service">Servicios</option>
+                        </select>
+                     </div>
+                     <div class="filter-container">
+                        <p class="title-option">¿En qué país?</p>
+                        <select class="filter filter-1">
+                           <option value="all">Todo el mundo</option>
+                           <option value="argentina">Argentina</option>
+                           <option value="chile">Chile</option>
+                           <option value="colombia">Colombia</option>
+                           <option value="uruguay">Uruguay</option>
+                           <option value="mexico">México</option>
+                        </select>
+                     </div>
+                     <div class="filter-container">
+                        <p class="title-option">Ordenado por:</p>
+                        <select class="filter filter-1">
+                           <option value="popularidad">mayor popularidad</option>
+                           <option value="nuevo primero">más nuevo primero</option>
+                           <option value="fin mas tarde primero">finaliza más tarde primero</option>
+                           <option value="mayor monto">mayor monto de financiamiento</option>
+                           <option value="menor">menor monto de financiamiento</option>
+                           <option value="mas patrocinadores">mayor número de patrocinadores</option>
+                           <option value="menos patrocinadores">menor número de patrocinadores</option>
+                        </select>
+                     </div>
+                   </div>
+                   <button class="invest-button btn-filter hover-opacity" type="button" aria-label="Close" name="button">Aplicar filtros</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--Filters-->
         <div id="filters" class="menu-container hide-mobile-tablet p-5">
            <div class="title-container">
@@ -251,7 +259,7 @@
               <button class="invest-button btn-filter hover-opacity" type="button" name="button">Aplicar filtros</button>
            </div>
         </div>
-        <div class="container-main container-feed">
+        <div class="container-main-colorful container-main container-feed">
          <div class="feed mt-80-neg d-w-80 container-fluid">
              <!--POST-->
              <div class="p-15-sides col-12 col-sm-12 col-md-6 col-xxl-4">
@@ -346,7 +354,7 @@
                        </div>
                        <div class="actions-post">
                           <div class="invest-container action">
-                             <a class="invest-button action" href="./pages/post-AEYE.html">Ver más</a>
+                             <a class="invest-button action" href="./pages/post-DEEPER.html">Ver más</a>
                           </div>
                        </div>
                     </div>
