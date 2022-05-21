@@ -53,6 +53,7 @@ p{
   line-height: 24px;
 }
 
+
 button{
   cursor: pointer;
 }
@@ -130,7 +131,7 @@ h4, h4.h4{
 
 @each $zindex in 900, 1000, 1200, 1500, 5000, 9000, 9001, 9999{
   .z-index-#{$zindex}{
-    z-index: #{$zindex};
+    z-index: #{$zindex} !important;
   }
 }
 
@@ -142,6 +143,9 @@ h4, h4.h4{
   width: 66.666%;
 }
 
+.w-fit{
+  width: fit-content;
+}
 
 .fixed{
   position: fixed;
@@ -238,7 +242,7 @@ h4, h4.h4{
 .font-accent{
   font-family: 'Alfa Slab One', cursive;
   font-weight: 800;
-  color: #4d5646;
+  color: #787878;
 }
 
 #home{
@@ -517,6 +521,15 @@ padding-left: 0;
   bottom: 0px;
 }
 
+#navbar-bottom .nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0.25rem 0.45rem;
+}
+
 .navbar-container{
   display: flex;
   flex-wrap: wrap;
@@ -608,7 +621,7 @@ padding-left: 0;
 
 
 .navbar-head i.fa-solid.fa-square-plus {
-  font-size: 1.9em;
+  font-size: 1.8em;
 }
 
 .fa-money-bill-1-wave{
@@ -730,7 +743,12 @@ padding-left: 0;
 }
 
 .offcanvas-body .title-option{
-font-size: 15px;
+  font-size: 15px;
+}
+
+
+#navbar-bottom .offcanvas-bottom{
+  height: 25vh;
 }
 
 .profile-mobile .offcanvas-start{
@@ -1453,8 +1471,30 @@ footer a:hover{
 }
 
 .column-nav {
-    width: 33%;
-    min-width: 80px;
+  width: 33%;
+  min-width: 80px;
+}
+
+.column-nav{
+  height: 100%;
+}
+
+.column-nav .container-fluid{
+  height: 100%;
+  width: 100%;
+}
+
+.column-nav.navbar-toggler {
+  width: 100%!important;
+  height: 100%!important;
+}
+
+button.column-nav.navbar-toggler {
+    text-align: right;
+}
+
+.my-account-button {
+    width: fit-content;
 }
 
 .container-feed{
@@ -1530,6 +1570,10 @@ nav.navbar.navbar-light.bg-light {
   }
 }
 
+
+i.fa-solid.fa-user{
+  margin-bottom: 3px;
+}
 
 @media (max-width: 767px){
   .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus{

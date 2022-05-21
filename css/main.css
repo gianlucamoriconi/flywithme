@@ -404,34 +404,37 @@ h4, h4.h4 {
   height: 100vh; }
 
 .z-index-900 {
-  z-index: 900; }
+  z-index: 900 !important; }
 
 .z-index-1000 {
-  z-index: 1000; }
+  z-index: 1000 !important; }
 
 .z-index-1200 {
-  z-index: 1200; }
+  z-index: 1200 !important; }
 
 .z-index-1500 {
-  z-index: 1500; }
+  z-index: 1500 !important; }
 
 .z-index-5000 {
-  z-index: 5000; }
+  z-index: 5000 !important; }
 
 .z-index-9000 {
-  z-index: 9000; }
+  z-index: 9000 !important; }
 
 .z-index-9001 {
-  z-index: 9001; }
+  z-index: 9001 !important; }
 
 .z-index-9999 {
-  z-index: 9999; }
+  z-index: 9999 !important; }
 
 .w-33 {
   width: 33.333%; }
 
 .w-66 {
   width: 66.666%; }
+
+.w-fit {
+  width: fit-content; }
 
 .fixed {
   position: fixed;
@@ -502,7 +505,7 @@ h4, h4.h4 {
 .font-accent {
   font-family: 'Alfa Slab One', cursive;
   font-weight: 800;
-  color: #4d5646; }
+  color: #787878; }
 
 #home {
   display: grid;
@@ -729,6 +732,14 @@ div.list ul {
   top: unset !important;
   bottom: 0px; }
 
+#navbar-bottom .nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0.25rem 0.45rem; }
+
 .navbar-container {
   display: flex;
   flex-wrap: wrap;
@@ -801,7 +812,7 @@ div.list ul {
   font-weight: 400; }
 
 .navbar-head i.fa-solid.fa-square-plus {
-  font-size: 1.9em; }
+  font-size: 1.8em; }
 
 .fa-money-bill-1-wave {
   font-size: 22px; }
@@ -890,6 +901,9 @@ div.list ul {
 
 .offcanvas-body .title-option {
   font-size: 15px; }
+
+#navbar-bottom .offcanvas-bottom {
+  height: 25vh; }
 
 .profile-mobile .offcanvas-start {
   width: 300px !important; }
@@ -1444,6 +1458,23 @@ footer a:hover {
   width: 33%;
   min-width: 80px; }
 
+.column-nav {
+  height: 100%; }
+
+.column-nav .container-fluid {
+  height: 100%;
+  width: 100%; }
+
+.column-nav.navbar-toggler {
+  width: 100% !important;
+  height: 100% !important; }
+
+button.column-nav.navbar-toggler {
+  text-align: right; }
+
+.my-account-button {
+  width: fit-content; }
+
 .container-feed {
   margin-top: 80px; }
 
@@ -1494,6 +1525,9 @@ nav.navbar.navbar-light.bg-light {
   transition: 0.2s; }
   .navbar-head i.fa-solid.fa-user:hover, .navbar-head i.fa-solid.fa-house:hover {
     color: var(--color2); }
+
+i.fa-solid.fa-user {
+  margin-bottom: 3px; }
 
 @media (max-width: 767px) {
   .navbar-head i.fa-solid.fa-user, .navbar-head i.fa-solid.fa-house, .navbar-head i.fa-square-plus {
